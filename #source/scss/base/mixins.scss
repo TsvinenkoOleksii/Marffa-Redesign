@@ -1,0 +1,94 @@
+@import "theme";
+
+
+
+// Брейкпоінти для адаптивності
+@mixin breakpoint($point) {
+  @if $point == superLargeDesktop {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  } @else if $point == largeDesktop {
+    @media (max-width: 1599px) {
+      @content;
+    }
+  } @else if $point == mediumDesktop {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  } @else if $point == smallDesktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }@else if $point == tablet {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $point == tabletSmall {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $point == smallMobile {
+    @media (max-width: 370px) {
+      @content;
+    }
+  }
+}
+
+
+@mixin main-font-properties($weight){
+  font-family: $--theme-font-family;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin main-font-number-properties($weight){
+  font-family: $--theme-font-family-secondary;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+
+@mixin headings-properties($heading){
+  @if ($heading == 'h1') {
+    font-size: $--theme-font-size-heading-h1;
+    line-height: $--theme-line-height-heading-h1;
+  } @else if ($heading == 'h2'){
+    font-size: $--theme-font-size-heading-h2;
+    line-height: $--theme-line-height-heading-h2;
+  } @else if ($heading == 'h3'){
+    font-size: $--theme-font-size-heading-h3;
+    line-height: $--theme-line-height-heading-h3;
+  } @else if ($heading == 'h4'){
+    font-size: $--theme-font-size-heading-h4;
+    line-height: $--theme-line-height-heading-h4;
+  } @else if ($heading == 'h5'){
+    font-size: $--theme-font-size-heading-h5;
+    line-height: $--theme-line-height-heading-h5;
+  }
+}
+
+
+
+
+
+
+@mixin transition($x...){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
+@mixin transform($x...){
+  -webkit-transform: $x;
+  -moz-transform: $x;
+  -ms-transform: $x;
+  -o-transform: $x;
+  transform: $x;
+}

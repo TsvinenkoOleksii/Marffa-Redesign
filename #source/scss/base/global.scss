@@ -1,0 +1,129 @@
+//Montserrat font connection
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../fonts/Montserrat-Bold.eot');
+  src: url('../../../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../../../fonts/Montserrat-Bold.woff') format('woff'),
+  url('../../../fonts/Montserrat-Bold.ttf') format('truetype'),
+  url('../../../fonts/Montserrat-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../fonts/Montserrat-Regular.eot');
+  src: url('../../../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../../../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../../../fonts/Montserrat-Regular.ttf') format('truetype'),
+  url('../../../fonts/Montserrat-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Poppins font connection
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../../fonts/Poppins-ExtraLight.eot');
+  src: url('../../../fonts/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+  url('../../../fonts/Poppins-ExtraLight.woff') format('woff'),
+  url('../../../fonts/Poppins-ExtraLight.ttf') format('truetype'),
+  url('../../../fonts/Poppins-ExtraLight.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../../fonts/Poppins-Regular.eot');
+  src: url('../../../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Poppins-Regular.woff2') format('woff2'),
+  url('../../../fonts/Poppins-Regular.woff') format('woff'),
+  url('../../../fonts/Poppins-Regular.ttf') format('truetype'),
+  url('../../../fonts/Poppins-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../../fonts/Poppins-Bold.eot');
+  src: url('../../../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Poppins-Bold.woff2') format('woff2'),
+  url('../../../fonts/Poppins-Bold.woff') format('woff'),
+  url('../../../fonts/Poppins-Bold.ttf') format('truetype'),
+  url('../../../fonts/Poppins-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Theme properties connection
+@import 'theme';
+
+
+
+
+
+.container {
+  margin: 0 auto;
+  @include breakpoint('superLargeDesktop') {
+    max-width: 1410px;
+  }
+
+  @include breakpoint('largeDesktop') {
+    max-width: 1280px;
+  }
+
+  @include breakpoint('mediumDesktop') {
+    max-width: 1170px;
+  }
+
+
+
+}
+
+
+h1 {
+  @include headings-properties('h1');
+
+}
+
+h2 {
+  @include headings-properties('h2');
+}
+
+h3 {
+  @include headings-properties('h3');
+
+  @include breakpoint('mediumDesktop') {
+    font-size: 30px;
+  }
+
+  @include breakpoint('smallDesktop') {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+}
+
+h4 {
+  @include headings-properties('h5');
+}
+
+h5 {
+  @include headings-properties('h5');
+}
+.orange-line {
+  background-color: #FC491E;
+}
+b {
+  font-weight: 700;
+}
