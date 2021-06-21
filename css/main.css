@@ -450,19 +450,6 @@ b {
   overflow: hidden;
   margin: 0 auto;
 }
-.atf__atf-container ::before {
-  content: "continue";
-  position: absolute;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  font-size: 14px;
-  line-height: 24px;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  font-weight: 300;
-  top: 0;
-  left: 0;
-}
 .atf__background-element-4 {
   position: absolute;
   bottom: 0;
@@ -587,17 +574,17 @@ b {
           justify-content: center;
 }
 
-.animation {
+.marketing-approach {
   background-image: url("../img/animationBackground.png");
   background-size: 100% 86%;
   background-repeat: no-repeat;
   background-color: #f1f1f1;
 }
-.animation__row {
+.marketing-approach__row {
   height: 792px;
   position: relative;
 }
-.animation__col-1 {
+.marketing-approach__col-1 {
   width: 100%;
   padding-top: 23px;
   display: -webkit-box;
@@ -608,32 +595,32 @@ b {
           justify-content: space-between;
   margin-bottom: 100px;
 }
-.animation__orange-line {
+.marketing-approach__orange-line {
   width: 41px;
   height: 8px;
 }
-.animation__title {
+.marketing-approach__title {
   font-size: 48px;
   line-height: 72px;
   font-family: "Poppins";
   font-weight: 400;
   color: #FC491E;
 }
-.animation__title b {
+.marketing-approach__title b {
   font-weight: 700;
   color: white;
 }
-.animation__subtitle {
+.marketing-approach__subtitle {
   font-size: 21px;
   line-height: 36px;
   color: white;
   font-weight: 400;
   width: 450px;
 }
-.animation__subtitle b {
+.marketing-approach__subtitle b {
   font-weight: 700;
 }
-.animation__col-2 {
+.marketing-approach__col-2 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,7 +632,7 @@ b {
       -ms-flex-align: center;
           align-items: center;
 }
-.animation__table {
+.marketing-approach__table {
   width: 943px !important;
   height: auto;
   border-radius: 30px;
@@ -654,7 +641,7 @@ b {
   z-index: 1;
   position: relative;
 }
-.animation__table-shadow {
+.marketing-approach__table-shadow {
   position: absolute;
   width: 750px;
   height: 359px;
@@ -666,14 +653,14 @@ b {
   bottom: -52px;
   left: 93px;
 }
-.animation__steps {
+.marketing-approach__steps {
   position: relative;
   width: 550px;
 }
-.animation__space {
+.marketing-approach__space {
   height: 5px;
 }
-.animation__step-1 {
+.marketing-approach__step-1 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
@@ -684,33 +671,33 @@ b {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-1 b {
+.marketing-approach__step-1 b {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: #517080;
 }
-.animation__step-1:hover {
+.marketing-approach__step-1:hover {
   color: #FC491E;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-1:hover b {
+.marketing-approach__step-1:hover b {
   color: #FC491E;
 }
-.animation__step-1:hover::before {
+.marketing-approach__step-1:hover::before {
   content: url("../img/01orange.svg");
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-1::before {
+.marketing-approach__step-1::before {
   content: url("../img/01.svg");
   left: -26px;
   position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-2 {
+.marketing-approach__step-2 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
@@ -721,33 +708,33 @@ b {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-2 b {
+.marketing-approach__step-2 b {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: #517080;
 }
-.animation__step-2:hover {
+.marketing-approach__step-2:hover {
   color: #FC491E;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-2:hover b {
+.marketing-approach__step-2:hover b {
   color: #FC491E;
 }
-.animation__step-2:hover::before {
+.marketing-approach__step-2:hover::before {
   content: url("../img/02orange.svg");
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-2::before {
+.marketing-approach__step-2::before {
   content: url("../img/02.svg");
   left: -26px;
   position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-3 {
+.marketing-approach__step-3 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
@@ -758,33 +745,33 @@ b {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-3 b {
+.marketing-approach__step-3 b {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: #517080;
 }
-.animation__step-3:hover {
+.marketing-approach__step-3:hover {
   color: #FC491E;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-3:hover b {
+.marketing-approach__step-3:hover b {
   color: #FC491E;
 }
-.animation__step-3:hover::before {
+.marketing-approach__step-3:hover::before {
   content: url("../img/03 orange.svg");
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-3::before {
+.marketing-approach__step-3::before {
   content: url("../img/03.svg");
   left: -26px;
   position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-4 {
+.marketing-approach__step-4 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
@@ -795,33 +782,33 @@ b {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-4 b {
+.marketing-approach__step-4 b {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: #517080;
 }
-.animation__step-4:hover {
+.marketing-approach__step-4:hover {
   color: #FC491E;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-4:hover b {
+.marketing-approach__step-4:hover b {
   color: #FC491E !important;
 }
-.animation__step-4:hover::before {
+.marketing-approach__step-4:hover::before {
   content: url("../img/04orange.svg");
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__step-4::before {
+.marketing-approach__step-4::before {
   content: url("../img/04.svg");
   left: -26px;
   position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.animation__circle {
+.marketing-approach__circle {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-8%);
@@ -829,7 +816,7 @@ b {
   left: 135px;
   z-index: 2;
 }
-.animation embed {
+.marketing-approach embed {
   width: 460px;
   height: 460px;
 }
@@ -1334,6 +1321,15 @@ b {
   padding-top: 200px;
   margin-top: -250px;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.contact-form img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .contact-form__row {
   width: 50%;
