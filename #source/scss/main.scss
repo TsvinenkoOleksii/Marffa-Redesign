@@ -3,6 +3,7 @@
 @import "base/mixins";
 @import "base/global";
 @import "header";
+@import "footer";
 
 //ATF BLOCK
 .atf {
@@ -836,6 +837,7 @@
 
   &__container {
   position: relative;
+    z-index: 2;
 
   }
 
@@ -962,7 +964,7 @@
     border-radius: 30px;
     padding: 64px 66px 71px 70px;
     display: flex;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
   }
 
@@ -1053,7 +1055,7 @@
   height: 1052px;
   padding-top: 200px;
   margin-top: -250px;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   position: relative;
 
@@ -1146,6 +1148,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    padding: 0;
 
   }
 
@@ -1216,6 +1219,13 @@
   &__form-row-2 {
     width: 50%;
     display: inline-block;
+  }
+
+  &__submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 
 }

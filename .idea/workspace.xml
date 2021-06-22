@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#source/html/homePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#source/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#source/html/homePage.kit" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/homePage.kit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#source/scss/base/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/base/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-protected.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-protected.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Mount-and-Blade-2-Bannerlord-by-Igruha.torrent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/[rutor.is]DARK_SOULS_REMASTERED_by_xatab.torrent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-protected.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,8 @@
       <workItem from="1624278937732" duration="330000" />
       <workItem from="1624286633284" duration="102000" />
       <workItem from="1624286824514" duration="2287000" />
-      <workItem from="1624289197177" duration="814000" />
+      <workItem from="1624289197177" duration="1031000" />
+      <workItem from="1624352499673" duration="8617000" />
     </task>
     <servers />
   </component>
