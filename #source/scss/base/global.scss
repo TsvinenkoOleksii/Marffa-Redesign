@@ -1,3 +1,4 @@
+@import "mixins";
 //Montserrat font connection
 @font-face {
   font-family: 'Montserrat';
@@ -24,7 +25,56 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../fonts/Montserrat-Medium.eot');
+  src: url('../../../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Montserrat-Medium.woff2') format('woff2'),
+  url('../../../fonts/Montserrat-Medium.woff') format('woff'),
+  url('../../../fonts/Montserrat-Medium.ttf') format('truetype'),
+  url('../../../fonts/Montserrat-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../fonts/Montserrat-SemiBold.eot');
+  src: url('../../../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+  url('../../../fonts/Montserrat-SemiBold.woff') format('woff'),
+  url('../../../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+  url('../../../fonts/Montserrat-SemiBold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../fonts/Montserrat-ExtraBold.eot');
+  src: url('../../../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+  url('../../../fonts/Montserrat-ExtraBold.woff') format('woff'),
+  url('../../../fonts/Montserrat-ExtraBold.ttf') format('truetype'),
+  url('../../../fonts/Montserrat-ExtraBold.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../../../fonts/SFUIDisplay-Black.eot');
+  src: url('../../../fonts/SFUIDisplay-Black.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/SFUIDisplay-Black.woff2') format('woff2'),
+  url('../../../fonts/SFUIDisplay-Black.woff') format('woff'),
+  url('../../../fonts/SFUIDisplay-Black.ttf') format('truetype'),
+  url('../../../fonts/SFUIDisplay-Black.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
 //Poppins font connection
 @font-face {
   font-family: 'Poppins';
@@ -74,18 +124,36 @@
 
 .container {
   margin: 0 auto;
+  width: 100%;
   @include breakpoint('superLargeDesktop') {
-    max-width: 1410px;
+    max-width: 1140px;
   }
 
   @include breakpoint('largeDesktop') {
-    max-width: 1280px;
+    max-width: 1140px;
   }
 
   @include breakpoint('mediumDesktop') {
-    max-width: 1170px;
+    max-width: 1140px;
   }
 
+  @include breakpoint('smallDesktop'){
+    max-width: 950px;
+  }
+
+  @include breakpoint(tablet){
+    max-width: 900px;
+  }
+
+  @include breakpoint(tabletSmall){
+    max-width: 700px;
+  }
+
+  @include breakpoint(mobile){
+    max-width: 370px;
+  }
+
+  @include breakpoint(mobileSmall){}
 
 
 }
