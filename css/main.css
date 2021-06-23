@@ -849,6 +849,7 @@ body {
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  border: 3px solid transparent;
 }
 .section2__subtitle {
   font-family: Montserrat;
