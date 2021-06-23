@@ -20,64 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#source/html/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/html/homePage.kit" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/homePage.kit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/scss/base/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/base/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/scss/footer.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/#source/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/01orange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/02orange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/03 orange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/04orange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/BackgroundATF.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/animatedCircle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/animationBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgrondElement1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundCapabilities.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundContactForm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundCreativeProcess.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundElement2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundElement3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/backgroundElement4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/capabilitiesImgFour.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/capabilitiesImgOne.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/capabilitiesImgThree.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/capabilitiesImgTwo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/creativeProcessBackgroundItem.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/creativeProcessImgFour.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/creativeProcessImgOne.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/creativeProcessImgTree.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/creativeProcessImgTwo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/facebookSocial.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/footerLogo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/formImg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fourthTestomonial.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/guaranteeImg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/guaranteeImg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/instagramSocial.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/linkedinSocial.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logoHeader.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/nextBtnSlaider.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/play-button.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/secondTestimonial.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/testimonialWomen.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/thirdTestimonial.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/twitterSocial.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/womenTestimonial.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-protected-protected.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main-dist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
