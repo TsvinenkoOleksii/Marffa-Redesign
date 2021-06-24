@@ -141,19 +141,19 @@
     max-width: 950px;
   }
 
-  @include breakpoint(tablet){
+  @include breakpoint('tablet'){
     max-width: 900px;
   }
 
-  @include breakpoint(tabletSmall){
+  @include breakpoint('tabletSmall'){
     max-width: 700px;
   }
 
-  @include breakpoint(mobile){
+  @include breakpoint('mobile'){
     max-width: 370px;
   }
 
-  @include breakpoint(mobileSmall){}
+  @include breakpoint('mobileSmall'){}
 
 
 }
