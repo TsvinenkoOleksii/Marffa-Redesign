@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -40px;
+    margin-left: -25px;
   }
 
   &__button {
@@ -54,6 +54,7 @@
         box-shadow: 0px 5px 30px rgba(230, 205, 11, 0.3);
         background-color: #E6CD0B;
         color: #1D1B4C;
+        font-weight: 700;
       }
 
     }

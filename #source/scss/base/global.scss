@@ -64,14 +64,14 @@
 
 
 @font-face {
-  font-family: 'SF UI Display';
-  src: url('../../../fonts/SFUIDisplay-Black.eot');
-  src: url('../../../fonts/SFUIDisplay-Black.eot?#iefix') format('embedded-opentype'),
-  url('../../../fonts/SFUIDisplay-Black.woff2') format('woff2'),
-  url('../../../fonts/SFUIDisplay-Black.woff') format('woff'),
-  url('../../../fonts/SFUIDisplay-Black.ttf') format('truetype'),
-  url('../../../fonts/SFUIDisplay-Black.svg') format('svg');
-  font-weight: 200;
+  font-family: 'Saira Condensed';
+  src: url('../../../fonts/SairaCondensed-Bold.eot');
+  src: url('../../../fonts/SairaCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/SairaCondensed-Bold.woff2') format('woff2'),
+  url('../../../fonts/SairaCondensed-Bold.woff') format('woff'),
+  url('../../../fonts/SairaCondensed-Bold.ttf') format('truetype'),
+  url('../../../fonts/SairaCondensed-Bold.svg') format('svg');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -150,7 +150,8 @@
   }
 
   @include breakpoint('mobile'){
-    max-width: 370px;
+    max-width: 100%;
+    padding: 0 24px;
   }
 
   @include breakpoint('mobileSmall'){}

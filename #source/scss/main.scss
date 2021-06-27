@@ -14,61 +14,66 @@ body {
   display:flex;
   flex-direction: column;
   width: 100%;
+  background-image: url("../img/baclgroundFirst.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 56.5% 99.9%;
 
 
   &__column-1 {
-    width: 50%;
-  }
-
-  &__title {
-    font-family: SF UI Display;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 52px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: white;
-    margin-bottom: 64px;
-    margin-top: 184px;
-
-    span {
-    color: #E6CD0B;
-    }
-
+    width: 952px;
     @include breakpoint(largeDesktop){}
 
     @include breakpoint(mediumDesktop){
-      font-size: 32px;
-    line-height: 43px;}
-
-    @include breakpoint(smallDesktop){
-      font-size: 30px;
-      line-height: 38px;
     }
+    @include breakpoint(smallDesktop){}
 
-    @include breakpoint(tablet){
-      font-size: 28px;
-      line-height: 36px;
+    @include breakpoint(tablet){}
+
+    @include breakpoint(tabletSmall){
+      width: 100%;
     }
-
-    @include breakpoint(tabletSmall){}
 
     @include breakpoint(mobile){}
 
     @include breakpoint(mobileSmall){}
   }
 
-  &__mail-title {
-    font-family: Montserrat;
-    font-size: 16px;
+  &__title {
+    font-family: Saira Condensed;
+    font-size: 77px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 83px;
+    letter-spacing: -0.04em;
     text-align: left;
     color: white;
-    margin-bottom: 16px;
+    margin-bottom: 64px;
+    margin-top: 184px;
+    text-transform: uppercase;
+
+    span {
+    color: #E6CD0B;
+    }
+    br {
+      display: block;
+      @include breakpoint(largeDesktop){}
+
+      @include breakpoint(mediumDesktop){}
+
+      @include breakpoint(smallDesktop){}
+
+      @include breakpoint(tablet){}
+
+      @include breakpoint(tabletSmall){
+        display: none;
+      }
+
+      @include breakpoint(mobile){}
+
+      @include breakpoint(mobileSmall){}
+    }
+
 
     @include breakpoint(largeDesktop){}
 
@@ -76,113 +81,56 @@ body {
 
     @include breakpoint(smallDesktop){}
 
-    @include breakpoint(tablet){}
+    @include breakpoint(tablet){
+      font-size: 70px;
+      line-height: 80px;
+
+    }
 
     @include breakpoint(tabletSmall){}
 
-    @include breakpoint(mobile){}
+    @include breakpoint(mobile){
+      font-size: 47px;
+      line-height: 67px;
+    }
 
     @include breakpoint(mobileSmall){}
   }
 
-  &__mail-form {
-    display: flex;
-    input[type=text]{
-      background-color: transparent;
-      padding: 16px 12px;
-      border: 1px solid rgba(186, 186, 186, 0.97);
-      border-radius: 4px 0px 0px 4px;
-      width: 336px;
-      height: 50px;
-      color:#B7B7B2;
-
-      @include breakpoint(largeDesktop){}
-
-      @include breakpoint(mediumDesktop){}
-
-      @include breakpoint(smallDesktop){}
-
-      @include breakpoint(tablet){}
-
-      @include breakpoint(tabletSmall){}
-
-      @include breakpoint(mobile){}
-
-      @include breakpoint(mobileSmall){}
-    }
-    input::placeholder {
-      color: #B7B7B2;
-      font-family: Montserrat;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 26px;
-      letter-spacing: 0em;
-      text-align: left;
-
-      @include breakpoint(largeDesktop){}
-
-      @include breakpoint(mediumDesktop){}
-
-      @include breakpoint(smallDesktop){}
-
-      @include breakpoint(tablet){}
-
-      @include breakpoint(tabletSmall){}
-
-      @include breakpoint(mobile){}
-
-      @include breakpoint(mobileSmall){}
-    }
-
-    input:focus {
-      border: 1px solid #E6CD0B;
-    }
-    input[type=submit] {
-    width: 131px;
-      height: 50px;
-      background-color: #E6CD0B;
-      box-shadow: 0px 5px 30px rgba(230, 205, 11, 0.3);
-      border-radius: 0px 6px 6px 0px;
-      color: #1D1B4C;
-      font-family: Montserrat;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 26px;
-      letter-spacing: 0em;
-      text-align: left;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 12px;
-
-      @include breakpoint(largeDesktop){}
-
-      @include breakpoint(mediumDesktop){}
-
-      @include breakpoint(smallDesktop){}
-
-      @include breakpoint(tablet){}
-
-      @include breakpoint(tabletSmall){}
-
-      @include breakpoint(mobile){}
-
-      @include breakpoint(mobileSmall){}
-    }
-
-  }
-  &__mail-subtext {
-    font-family: Montserrat;
-    font-size: 11px;
+  &__subtitle {
+    font-family: Poppins;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
+    font-weight: 400;
+    line-height: 69px;
     letter-spacing: 0em;
     text-align: left;
-    color: #878787;
+    color: #E6CD0B;
+    text-transform: uppercase;
+    margin-left: 24px;
+    position: relative;
+    :before {
+      content: url("../img/arrow.svg");
+      position: absolute;
+      left: 0;
+    }
   }
+
+  @include breakpoint(largeDesktop){}
+
+  @include breakpoint(mediumDesktop){
+  }
+  @include breakpoint(smallDesktop){}
+
+  @include breakpoint(tablet){}
+
+  @include breakpoint(tabletSmall){}
+
+  @include breakpoint(mobile){
+    background-size: 100% 99.9%;
+  }
+
+  @include breakpoint(mobileSmall){}
 
 }
 
@@ -191,139 +139,137 @@ body {
   &__row {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    flex-direction: row;
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){}
+
+    @include breakpoint(tabletSmall){}
+
+    @include breakpoint(mobile){
+      flex-direction: column;
+    }
+
+    @include breakpoint(mobileSmall){}
+  }
+
+  &__under-block-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 69px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    left: -173px;
+    bottom: 75px;
+    transform: rotate(-90deg);
+    color: #B8B8B8;
+    text-transform: uppercase;
+    display: block;
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){
+      left: -103px;
+    }
+
+    @include breakpoint(tabletSmall){
+      left: -83px;
+    }
+
+    @include breakpoint(mobile){
+      display: none;
+    }
+
+    @include breakpoint(mobileSmall){}
+
+  }
+
+  &__animation-img-1 {
+    position: absolute;
+    bottom: 0;
+    -webkit-animation: slider 20s linear infinite;
+  }
+  @keyframes slider {
+    from {
+      left: -500px;
+    }
+
+    to {
+      left: 2000px;
+    }
+  }
+
+  &__animation-img-2 {
+    position: absolute;
+    bottom: 45px;
+    -webkit-animation: slidera 20s linear infinite;
+  }
+  @keyframes slidera {
+    from {
+      left: 2000px;
+    }
+
+    to {
+      left: -1500px;
+    }
   }
 
   &__column-1 {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  &__title {
-    font-family: Montserrat;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 54px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-    margin-top: 143px;
-    position: relative;
-
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){}
-
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){}
-
-    @include breakpoint(mobile){}
-
-    @include breakpoint(mobileSmall){}
-  }
-
-  &__title:after {
-    content: '';
-    width: 64px;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.95);
-    position: absolute;
-    z-index: 2;
-    bottom: -32px;
-    left: 0;
-
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){}
-
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){}
-
-    @include breakpoint(mobile){}
-
-    @include breakpoint(mobileSmall){}
-
-  }
-
-  &__column-2 {
-
-    width: 587px;
-    position: relative;
-  }
-
-    a {
-      color: #E6CD0B;
-      font-family: Montserrat;
-      font-size: 18px;
+    &__title {
+      font-family: Saira Condensed;
+      font-size: 77px;
       font-style: normal;
-      font-weight: 500;
-      line-height: 22px;
-      letter-spacing: 0em;
+      font-weight: 600;
+      line-height: 83px;
+      letter-spacing: -0.04em;
       text-align: left;
-      margin-left: 37px;
-
-      &:before {
-        content:url("../img/Vector.svg");
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        @include breakpoint(largeDesktop){}
-
-        @include breakpoint(mediumDesktop){}
-
-        @include breakpoint(smallDesktop){}
-
-        @include breakpoint(tablet){}
-
-        @include breakpoint(tabletSmall){}
-
-        @include breakpoint(mobile){}
-
-        @include breakpoint(mobileSmall){}
+      color: white;
+      position: relative;
+      span {
+        color: #E6CD0B;
       }
-      @include breakpoint(largeDesktop){}
 
-      @include breakpoint(mediumDesktop){}
+      @include breakpoint(largeDesktop) {
+      }
 
-      @include breakpoint(smallDesktop){}
+      @include breakpoint(mediumDesktop) {
+      }
 
-      @include breakpoint(tablet){}
+      @include breakpoint(smallDesktop) {
+      }
 
-      @include breakpoint(tabletSmall){}
+      @include breakpoint(tablet) {
+      }
 
-      @include breakpoint(mobile){}
+      @include breakpoint(tabletSmall) {
+      }
 
-      @include breakpoint(mobileSmall){}
+      @include breakpoint(mobile) {
+        font-size:47px;
+        line-height: 83px;
+      }
 
+      @include breakpoint(mobileSmall) {
+      }
     }
-  a:last-child {
-    margin-left: 82px;
-    &:before {
-      content:url("../img/phone.svg");
-      position: absolute;
-      left: 240px;
-      bottom: 0;
-      @include breakpoint(largeDesktop){}
-
-      @include breakpoint(mediumDesktop){}
-
-      @include breakpoint(smallDesktop){}
-
-      @include breakpoint(tablet){}
-
-      @include breakpoint(tabletSmall){}
-
-      @include breakpoint(mobile){}
-
-      @include breakpoint(mobileSmall){}
-    }
-
-  }
 
 
     &__text {
@@ -335,27 +281,174 @@ body {
       letter-spacing: 0em;
       text-align: left;
       color: rgba(255, 255, 255, 0.85);
-      margin-top: 167px;
-      margin-bottom: 33px;
-      width: 587px;
+      margin-top: 20px;
+      margin-bottom: 37px;
+      width: 450px;
 
-      @include breakpoint(largeDesktop){}
+      b {
+        font-weight: 700;
+      }
 
-      @include breakpoint(mediumDesktop){}
+      @include breakpoint(largeDesktop) {
+      }
 
-      @include breakpoint(smallDesktop){}
+      @include breakpoint(mediumDesktop) {
+      }
 
-      @include breakpoint(tablet){}
+      @include breakpoint(smallDesktop) {
+      }
 
-      @include breakpoint(tabletSmall){}
+      @include breakpoint(tablet) {
+      }
 
-      @include breakpoint(mobile){}
+      @include breakpoint(tabletSmall) {
+        width: 350px;
+      }
 
-      @include breakpoint(mobileSmall){}
+      @include breakpoint(mobile) {
+        font-size: 16px;
+        line-height: 25.6px;
+        width: 305px;
+      }
+
+      @include breakpoint(mobileSmall) {
+      }
     }
 
 
+  &__column-2 {
+
+    width: 587px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(largeDesktop) {
+    }
+
+    @include breakpoint(mediumDesktop) {
+    }
+
+    @include breakpoint(smallDesktop) {
+    }
+
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(tabletSmall) {
+    }
+
+    @include breakpoint(mobile) {
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    @include breakpoint(mobileSmall) {
+    }
+
+    a {
+      color: #E6CD0B;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-left: 37px !important;
+      position: relative;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #E6CD0B;
+
+
+      &:before {
+        content: url("../img/Vector.svg");
+        position: absolute;
+        margin-left: -38px;
+        @include breakpoint(largeDesktop) {
+        }
+
+        @include breakpoint(mediumDesktop) {
+        }
+
+        @include breakpoint(smallDesktop) {
+        }
+
+        @include breakpoint(tablet) {
+        }
+
+        @include breakpoint(tabletSmall) {
+        }
+
+        @include breakpoint(mobile) {
+        }
+
+        @include breakpoint(mobileSmall) {
+        }
+      }
+
+      @include breakpoint(largeDesktop) {
+      }
+
+      @include breakpoint(mediumDesktop) {
+      }
+
+      @include breakpoint(smallDesktop) {
+      }
+
+      @include breakpoint(tablet) {
+      }
+
+      @include breakpoint(tabletSmall) {
+      }
+
+      @include breakpoint(mobile) {
+      }
+
+      @include breakpoint(mobileSmall) {
+      }
+
+    }
+
+    a:last-child {
+      margin-left: 0px;
+      margin-top: 41px;
+
+      &:before {
+        content: url("../img/phone.svg");
+        position: absolute;
+        margin-left: -38px;
+        @include breakpoint(largeDesktop) {
+        }
+
+        @include breakpoint(mediumDesktop) {
+        }
+
+        @include breakpoint(smallDesktop) {
+        }
+
+        @include breakpoint(tablet) {
+        }
+
+        @include breakpoint(tabletSmall) {
+        }
+
+        @include breakpoint(mobile) {
+        }
+
+        @include breakpoint(mobileSmall) {
+        }
+
+      }
+
+    }
+
+  }
+
 }
+
+
 .section2 {
 
   &__row {
@@ -363,20 +456,23 @@ body {
   }
 
   &__title {
-    font-family: Montserrat;
-    font-size: 44px;
+    font-family:Saira Condensed;
+    font-size: 77px;
     font-style: normal;
     font-weight: 600;
-    line-height: 57px;
-    letter-spacing: 0em;
+    line-height: 83px;
+    letter-spacing: -0.04em;
     text-align: left;
     color: white;
     z-index: 2;
+    text-transform: uppercase;
+    span {
+      color: #E6CD0B;
+    }
     @include breakpoint(largeDesktop){}
 
     @include breakpoint(mediumDesktop){
-      font-size: 40px;
-      line-height: 53px;}
+      }
 
     @include breakpoint(smallDesktop){}
 
@@ -384,48 +480,107 @@ body {
 
     @include breakpoint(tabletSmall){}
 
-    @include breakpoint(mobile){}
-
-    @include breakpoint(mobileSmall){}
-
-  }
-
-  &__title:after {
-    content: '';
-    width: 64px;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.95);
-    position: absolute;
-    z-index: 2;
-    bottom: -40px;
-    left: 0;
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){
-
+    @include breakpoint(mobile){
+      font-size: 47px;
+      line-height: 56px;
+      width: 205px;
     }
 
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){}
-
-    @include breakpoint(mobile){}
-
     @include breakpoint(mobileSmall){}
+
   }
+
 
   &__row-2 {
     display: flex;
+    position: relative;
+    flex-direction: row;
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){
+    }
+
+    @include breakpoint(tabletSmall){
+    }
+
+    @include breakpoint(mobile){
+      flex-direction: column;
+    }
+
+    @include breakpoint(mobileSmall){}
+  }
+  &__under-block-text a{
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 69px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: absolute;
+    left: -173px;
+    bottom: 150px;
+    transform: rotate(-90deg);
+    color: #E6CD0B;
+    text-transform: uppercase;
+    display: block;
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){
+      left: -103px;
+    }
+
+    @include breakpoint(tabletSmall){
+      left: -83px;
+    }
+
+    @include breakpoint(mobile){
+      display: none;
+    }
+
+    @include breakpoint(mobileSmall){}
   }
 
   &__column-1 {
-    margin-right: 35px;
+    margin-right: 15px;
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){}
+
+    @include breakpoint(tabletSmall){}
+
+    @include breakpoint(mobile){margin: 0;}
+
+    @include breakpoint(mobileSmall){}
   }
 
   &__column-2 {
-    margin-left: 35px;
+    margin-left: 15px;
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){}
+
+    @include breakpoint(tabletSmall){}
+
+    @include breakpoint(mobile){margin: 0;}
+
+    @include breakpoint(mobileSmall){}
   }
 
   &__column {
@@ -444,14 +599,34 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     &:hover {
-     background: linear-gradient(180deg, #2E2E2E 0%, rgba(46, 46, 46, 0.75) 100%);
+     background-image: url("../img/backgroundHover.png");
       border-radius: 10px;
+      transform: scale(1.1);
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
       border: 3px solid transparent;
+    }
+    @include breakpoint(largeDesktop){}
+
+    @include breakpoint(mediumDesktop){}
+
+    @include breakpoint(smallDesktop){}
+
+    @include breakpoint(tablet){}
+
+    @include breakpoint(tabletSmall){}
+
+    @include breakpoint(mobile){
+      width: 342px;
+      height: 362px;
+    }
+
+    @include breakpoint(mobileSmall){
+    width: 327px;
+      height: 359px;
     }
 
   }
@@ -504,8 +679,7 @@ body {
     @include breakpoint(largeDesktop){}
 
     @include breakpoint(mediumDesktop){
-      font-size: 28px;
-      line-height: 36px;
+
     }
 
     @include breakpoint(smallDesktop){}
@@ -514,7 +688,10 @@ body {
 
     @include breakpoint(tabletSmall){}
 
-    @include breakpoint(mobile){}
+    @include breakpoint(mobile){
+      font-size:28px;
+      line-height: 36.4px;
+    }
 
     @include breakpoint(mobileSmall){}
 
@@ -541,7 +718,9 @@ body {
 
     @include breakpoint(tabletSmall){}
 
-    @include breakpoint(mobile){}
+    @include breakpoint(mobile){
+
+    }
 
     @include breakpoint(mobileSmall){}
   }
@@ -595,7 +774,10 @@ body {
 
       @include breakpoint(tabletSmall){}
 
-      @include breakpoint(mobile){}
+      @include breakpoint(mobile){
+        width: 175px;
+        height: 53px;
+      }
 
       @include breakpoint(mobileSmall){}
 
