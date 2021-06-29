@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="upload svg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <workItem from="1624802694107" duration="140000" />
       <workItem from="1624870016868" duration="10666000" />
       <workItem from="1624966298201" duration="2961000" />
-      <workItem from="1624976978258" duration="1537000" />
+      <workItem from="1624976978258" duration="1850000" />
     </task>
     <task id="LOCAL-00001" summary="added new files to git">
       <created>1624966652111</created>
