@@ -154,7 +154,20 @@
     padding: 0 24px;
   }
 
-  @include breakpoint('mobileSmall'){}
+  @include breakpoint('mobileSmall'){
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  @include breakpoint('bigMobileWithHeight'){
+
+  }
+  @include breakpoint('mobileWithHeight'){
+    padding: 0 15px;
+  }
+  @include breakpoint('smallMobileWithHeight'){
+
+  }
+
 
 
 }

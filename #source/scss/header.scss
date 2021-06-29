@@ -16,6 +16,37 @@
     align-items: center;
     justify-content: space-between;
     height: 125px;
+    @include breakpoint(largeDesktop) {
+    }
+
+    @include breakpoint(mediumDesktop) {
+    }
+
+    @include breakpoint(smallDesktop) {
+    }
+
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(tabletSmall) {
+    }
+
+    @include breakpoint(mobile) {
+      height: 75px  ;
+    }
+
+    @include breakpoint(mobileSmall) {
+
+    }
+    @include breakpoint(bigMobileWithHeight) {
+    height: 75px;
+    }
+    @include breakpoint(mobileWithHeight) {
+
+    }
+    @include breakpoint(smallMobileWithHeight) {
+
+    }
   }
 
   &__logo {
