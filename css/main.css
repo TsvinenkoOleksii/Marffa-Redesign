@@ -315,6 +315,8 @@ b {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   z-index: 2;
 }
 .header__button a:hover {
@@ -323,6 +325,8 @@ b {
   background-color: #E6CD0B;
   color: #1D1B4C;
   font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body {
@@ -656,6 +660,13 @@ body {
   content: url("../img/Vector.svg");
   position: absolute;
   margin-left: -38px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.section1__column-2 a:hover:before {
+  margin-left: -48px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .section1__column-2 a:last-child {
   margin-left: 0px;
@@ -665,7 +676,15 @@ body {
   content: url("../img/phone.svg");
   position: absolute;
   margin-left: -38px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+.section1__column-2 a:last-child:hover:before {
+  margin-left: -48px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .section2__row {
   position: relative;
 }

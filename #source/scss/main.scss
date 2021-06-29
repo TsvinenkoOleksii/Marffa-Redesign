@@ -418,6 +418,7 @@ body {
         content: url("../img/Vector.svg");
         position: absolute;
         margin-left: -38px;
+        transition: all 0.3s;
         @include breakpoint(largeDesktop) {
         }
 
@@ -438,6 +439,10 @@ body {
 
         @include breakpoint(mobileSmall) {
         }
+      }
+      &:hover:before {
+        margin-left: -48px;
+        transition: all 0.3s;
       }
 
       @include breakpoint(largeDesktop) {
@@ -471,6 +476,7 @@ body {
         content: url("../img/phone.svg");
         position: absolute;
         margin-left: -38px;
+        transition: all 0.3s;
         @include breakpoint(largeDesktop) {
         }
 
@@ -492,6 +498,10 @@ body {
         @include breakpoint(mobileSmall) {
         }
 
+      }
+      &:hover:before {
+        margin-left: -48px;
+        transition: all 0.3s;
       }
 
     }
