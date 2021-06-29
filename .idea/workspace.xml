@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="try way to fonts">
-      <change beforePath="$PROJECT_DIR$/#source/html/homePage.kit" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/homePage.kit" afterDir="false" />
+    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="upload svg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <workItem from="1624802694107" duration="140000" />
       <workItem from="1624870016868" duration="10666000" />
       <workItem from="1624966298201" duration="2961000" />
-      <workItem from="1624976978258" duration="55000" />
+      <workItem from="1624976978258" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="added new files to git">
       <created>1624966652111</created>
@@ -93,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624972340881</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upload svg">
+      <created>1624977069113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624977069113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +121,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added new files to git" />
     <MESSAGE value="try way to fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="try way to fonts" />
+    <MESSAGE value="upload svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload svg" />
   </component>
   <component name="WindowStateProjectService">
     <state x="708" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623753769342">
@@ -134,10 +142,10 @@
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1624382710923" />
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1623753757551" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1624972349627">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1624977077937">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624972349627" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624977077937" />
     <state x="478" y="149" width="579" height="534" key="find.popup" timestamp="1624493638636">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
