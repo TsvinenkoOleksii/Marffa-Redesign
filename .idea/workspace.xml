@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="upload svg">
       <change beforePath="$PROJECT_DIR$/#source/html/homePage.kit" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/homePage.kit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +80,8 @@
       <workItem from="1624802694107" duration="140000" />
       <workItem from="1624870016868" duration="10666000" />
       <workItem from="1624966298201" duration="2961000" />
-      <workItem from="1624976978258" duration="2042000" />
+      <workItem from="1624976978258" duration="2337000" />
+      <workItem from="1624986289944" duration="1670000" />
     </task>
     <task id="LOCAL-00001" summary="added new files to git">
       <created>1624966652111</created>
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624985659408</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="upload svg">
+      <created>1624985852771</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624985852771</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,10 +167,10 @@
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1624382710923" />
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1623753757551" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1624985666586">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1624985858632">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624985666586" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624985858632" />
     <state x="478" y="149" width="579" height="534" key="find.popup" timestamp="1624493638636">
       <screen x="0" y="0" width="1536" height="832" />
     </state>

@@ -10,6 +10,7 @@ body {
 .section {
   height: 100vh;
 }
+
 .section0 {
   display:flex;
   flex-direction: column;
@@ -126,11 +127,14 @@ body {
     text-transform: uppercase;
     margin-left: 24px;
     position: relative;
-    :before {
+    &:before {
       content: url("../img/arrow.svg");
       position: absolute;
-      left: 0;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-45%);
     }
+
   }
 
   @include breakpoint(largeDesktop){}
@@ -236,7 +240,7 @@ body {
   }
   @keyframes slider {
     from {
-      left: -500px;
+      left: -1500px;
     }
 
     to {
@@ -366,13 +370,12 @@ body {
 
 
   &__column-2 {
-
-    width: 587px;
+    width: 387px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     @include breakpoint(largeDesktop) {
     }
 
@@ -605,6 +608,18 @@ body {
     color: #E6CD0B;
     text-transform: uppercase;
     display: block;
+    &:before {
+      position: absolute;
+      content: url("../img/arrow.svg");
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      transition: all 0.3s;
+    }
+    &:hover:before {
+     right: -40px;
+      transition: all 0.3s;
+    }
     @include breakpoint(largeDesktop) {
     }
 
