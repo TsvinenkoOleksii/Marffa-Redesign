@@ -14,54 +14,54 @@
 <!-- @import "header.html"-->
 
 <div id="fullpage">
-    <div class="section active section0" id="section0">
+    <div class="section active atf" id="section0">
         <div class="container">
-            <div class="section0__column-1">
-                <div class="section0__title">We design, build, support and<br> grow stunning websites<br>
+            <div class="atf__column-one">
+                <div class="atf__title">We design, build, support and<br> grow stunning websites<br>
                     and web apps that<br>
-                    <span>skyrocket</span> your <span>sales</span> 🚀</div>
-                <div class="section0__subtitle">Scroll to see more</div>
+                    <span>skyrocket</span> your <span>sales</span></div>
+                <div class="atf__subtitle"><a href="#section1">Scroll to see more</a><button id="link-first-screen">scroll</button></div>
         </div>
-            <div class="section__column-2">
+            <div class="atf__column-two">
 
             </div>
     </div>
     </div>
-        <div class="section section1" id="section1">
+        <div class="section contact-us" id="section1">
             <div class="container">
-                <div class="section1__row">
-                <div class="section1__column-1">
-                    <div class="section1__title">How<span>?</span></div>
-                    <div class="section1__text">We'll soon explain further in case studies, but while that section of the website is in development — feel free to <b>contact us</b> and hear our stories </div>
+                <div class="contact-us__row">
+                <div class="contact-us__column-one">
+                    <div class="contact-us__title">How<span>?</span></div>
+                    <div class="contact-us__text">We'll soon explain further in case studies, but while that section of the website is in development — feel free to <b>contact us</b> and hear our stories </div>
             </div>
-                <div class="section1__column-2">
+                <div class="contact-us__column-two">
                     <a href="mailto:dmytro@marffa.com ">dmytro@marffa.com</a> <a href="tel:+358 41 742 9684">+358 41 742 9684</a>
                 </div>
-                    <div class="section1__under-block-text">Scroll to see more</div>
+                    <div class="contact-us__under-block-text"><a href="#section2" >Scroll to see more</a></div>
 
                 </div>
         </div>
-            <div class="section1__animation-img-1"><embed src="./img/Contact us stroke.svg"></div>
+            <div class="contact-us__animation-img-one"><embed src="./img/Contact us stroke.svg"></div>
 
-            <div class="section1__animation-img-2"><embed src="./img/Contact us stroke.svg"></div>
+            <div class="contact-us__animation-img-two"><embed src="./img/Contact us stroke.svg"></div>
         </div>
-    <div class="section section2" id="section2">
+    <div class="section about-us" id="section2">
         <div class="container">
-            <div class="section2__row">
-                <div class="section2__title">Meanwhile, <span>check this</span>: </div>
+            <div class="about-us__row">
+                <div class="about-us__title">Meanwhile, <span>check this</span>: </div>
             </div>
-            <div class="section2__row-2">
-            <div class="section2__column section2__column-1">
-                <div class="section2__subtitle">Meet our team</div>
-                <div class="section2__text">People who make these things possible daily.</div>
-                <div class="section2__btn"><a href="#">Learn more</a></div>
+            <div class="about-us__row-two">
+            <div class="about-us__column about-us__column-one">
+                <div class="about-us__subtitle">Meet our team</div>
+                <div class="about-us__text">People who make these things possible daily.</div>
+                <div class="about-us__btn"><a href="#">Learn more</a></div>
             </div>
-            <div class="section2__column section2__column-2">
-                <div class="section2__subtitle">Our portfolio</div>
-                <div class="section2__text">Most often it is this page, where clients decide to go ahead with us.</div>
-                <div class="section2__btn"><a href="#">Learn more</a></div>
+            <div class="about-us__column about-us__column-two">
+                <div class="about-us__subtitle">Our portfolio</div>
+                <div class="about-us__text">Most often it is this page, where clients decide to go ahead with us.</div>
+                <div class="about-us__btn"><a href="#">Learn more</a></div>
             </div>
-                <div class="section2__under-block-text"><a href="#section0" >BACK TO FIRST SCREEN</a></div>
+                <div class="about-us__under-block-text"><a href="#section0" >BACK TO FIRST SCREEN</a></div>
             </div>
         </div>
         </div>
@@ -71,6 +71,16 @@
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage',{
         anchors: ['section0']
+    });
+
+
+    new fullpage('#fullpage', {
+        anchors: ['page1', 'page2', 'page3']
+    });
+
+    //adding the action to the button
+    $(document).on('click', '#link-first-screen', function(){
+        fullpage_api.moveTo('page2');
     });
 
 </script>

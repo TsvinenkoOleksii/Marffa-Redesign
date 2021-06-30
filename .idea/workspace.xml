@@ -19,11 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="added svg image &amp; setting up anchor">
+    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="added transitions for hovers">
+      <change beforePath="$PROJECT_DIR$/#source/css/base/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/#source/css/base/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#source/html/homePage.kit" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/homePage.kit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#source/scss/base/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/base/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#source/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Contact us stroke.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Contact us stroke.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +86,8 @@
       <workItem from="1624870016868" duration="10666000" />
       <workItem from="1624966298201" duration="2961000" />
       <workItem from="1624976978258" duration="2337000" />
-      <workItem from="1624986289944" duration="2648000" />
+      <workItem from="1624986289944" duration="2821000" />
+      <workItem from="1625062743084" duration="10462000" />
     </task>
     <task id="LOCAL-00001" summary="added new files to git">
       <created>1624966652111</created>
@@ -131,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624988163968</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added transitions for hovers">
+      <created>1624989040242</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624989040242</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +168,8 @@
     <MESSAGE value="try way to fonts" />
     <MESSAGE value="upload svg" />
     <MESSAGE value="added svg image &amp; setting up anchor" />
-    <option name="LAST_COMMIT_MESSAGE" value="added svg image &amp; setting up anchor" />
+    <MESSAGE value="added transitions for hovers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added transitions for hovers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="708" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623753769342">
@@ -174,10 +189,10 @@
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1624382710923" />
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1623753757551" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1624988169521">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1624989041484">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624988169521" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624989041484" />
     <state x="478" y="149" width="579" height="534" key="find.popup" timestamp="1624493638636">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
@@ -186,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1624258421164" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1623770648925">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1625074131008">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1623770648925" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1625074131008" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

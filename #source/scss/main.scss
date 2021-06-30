@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-.section0 {
+.atf{
   display:flex;
   flex-direction: column;
   width: 100%;
@@ -21,7 +21,7 @@ body {
   background-size: 56.5% 99.9%;
 
 
-  &__column-1 {
+  &__column-one {
     width: 952px;
     @include breakpoint(largeDesktop){}
 
@@ -55,7 +55,20 @@ body {
 
     span {
     color: #E6CD0B;
+      position: relative;
+      &:last-child:after {
+        content: url("../img/Rocket.png");
+        top:0;
+        right: -130px;
+        position: absolute;
+      }
+      img {
+        width: 55px;
+        height: 55px;
+      }
+
     }
+
     br {
       display: block;
       @include breakpoint(largeDesktop){}
@@ -70,7 +83,8 @@ body {
         display: none;
       }
 
-      @include breakpoint(mobile){}
+      @include breakpoint(mobile){
+      }
 
       @include breakpoint(mobileSmall){}
     }
@@ -94,6 +108,7 @@ body {
       font-size: 47px;
       line-height: 67px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     @include breakpoint(mobileSmall){
@@ -115,7 +130,7 @@ body {
     }
   }
 
-  &__subtitle {
+  &__subtitle a {
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -133,6 +148,12 @@ body {
       left: -20px;
       top: 50%;
       transform: translateY(-45%);
+      transition: all 0.3s;
+      display: block;
+    }
+    &:hover:before {
+      transform: translateY(-40%);
+      transition: all 0.3s;
     }
 
   }
@@ -145,7 +166,9 @@ body {
 
   @include breakpoint(tablet){}
 
-  @include breakpoint(tabletSmall){}
+  @include breakpoint(tabletSmall){
+    display: none;
+  }
 
   @include breakpoint(mobile){
     background-size: 100% 99.9%;
@@ -163,7 +186,7 @@ body {
 
 }
 
-.section1 {
+.contact-us {
 
   &__row {
     display: flex;
@@ -187,7 +210,7 @@ body {
     @include breakpoint(mobileSmall){}
   }
 
-  &__under-block-text {
+  &__under-block-text a {
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -202,6 +225,17 @@ body {
     color: #B8B8B8;
     text-transform: uppercase;
     display: block;
+    &:before {
+      content: url("../img/whiteArrow.svg");
+      position: absolute;
+      left: -31px;
+      transform: rotate(90deg);
+      transition: all 0.3s;
+    }
+    &:hover:before {
+      transition: all 0.3s;
+      left: -41px;
+    }
     @include breakpoint(largeDesktop){}
 
     @include breakpoint(mediumDesktop){}
@@ -209,11 +243,11 @@ body {
     @include breakpoint(smallDesktop){}
 
     @include breakpoint(tablet){
-      left: -103px;
+      display: none;
     }
 
     @include breakpoint(tabletSmall){
-      left: -83px;
+      display: none;
     }
 
     @include breakpoint(mobile){
@@ -233,25 +267,27 @@ body {
 
   }
 
-  &__animation-img-1 {
+  &__animation-img-one {
     position: absolute;
     bottom: 0;
-    -webkit-animation: slider 20s linear infinite;
-  }
-  @keyframes slider {
-    from {
-      left: -1500px;
-    }
+    -webkit-animation: slider 10s linear infinite;
 
-    to {
-      left: 2000px;
+  }
+  @keyframes slider{
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(15%);
+
     }
   }
 
-  &__animation-img-2 {
+  &__animation-img-two {
     position: absolute;
     bottom: 45px;
     -webkit-animation: slidera 20s linear infinite;
+
   }
   @keyframes slidera {
     from {
@@ -263,7 +299,7 @@ body {
     }
   }
 
-  &__column-1 {
+  &__column-one {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -369,7 +405,7 @@ body {
     }
 
 
-  &__column-2 {
+  &__column-two {
     width: 387px;
     position: relative;
     display: flex;
@@ -383,12 +419,15 @@ body {
     }
 
     @include breakpoint(smallDesktop) {
+      align-items: flex-end;
     }
 
     @include breakpoint(tablet) {
+      align-items: flex-end;
     }
 
     @include breakpoint(tabletSmall) {
+      align-items: flex-end;
     }
 
     @include breakpoint(mobile) {
@@ -511,7 +550,7 @@ body {
 }
 
 
-.section2 {
+.about-us {
 
   &__row {
     position: relative;
@@ -576,7 +615,7 @@ body {
   }
 
 
-  &__row-2 {
+  &__row-two {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -640,11 +679,11 @@ body {
     }
 
     @include breakpoint(tablet) {
-      left: -103px;
+      display: none;
     }
 
     @include breakpoint(tabletSmall) {
-      left: -83px;
+      display: none;
     }
 
     @include breakpoint(mobile) {
@@ -663,7 +702,7 @@ body {
     }
   }
 
-  &__column-1 {
+  &__column-one {
     margin-right: 15px;
     @include breakpoint(largeDesktop) {
     }
@@ -688,7 +727,7 @@ body {
     }
   }
 
-  &__column-2 {
+  &__column-two {
     margin-left: 15px;
     @include breakpoint(largeDesktop) {
     }
@@ -714,7 +753,7 @@ body {
   }
 
   &__column {
-    margin-top: 80px;
+    margin-top: 61px;
     width: 535px;
     height: 385px;
     border: 3px solid #5F605F;

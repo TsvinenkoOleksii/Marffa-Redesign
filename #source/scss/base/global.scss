@@ -49,18 +49,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-ExtraBold.eot');
-  src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-  url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
-  url('../fonts/Montserrat-ExtraBold.ttf') format('truetype'),
-  url('../fonts/Montserrat-ExtraBold.svg') format('svg');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
 
 
 @font-face {
@@ -76,18 +64,7 @@
   font-display: swap;
 }
 //Poppins font connection
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins-ExtraLight.eot');
-  src: url('../fonts/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
-  url('../fonts/Poppins-ExtraLight.woff') format('woff'),
-  url('../fonts/Poppins-ExtraLight.ttf') format('truetype'),
-  url('../fonts/Poppins-ExtraLight.svg') format('svg');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 @font-face {
   font-family: 'Poppins';
