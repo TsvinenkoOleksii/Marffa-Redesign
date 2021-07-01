@@ -198,7 +198,8 @@ body {
   }
 
   @include breakpoint(mobile){
-    background-size: 100% 99.9%;
+    background-image: url("../img/mobileBackground.png");
+    background-size: 100%;
   }
 
   @include breakpoint(mobileSmall){}

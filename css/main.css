@@ -469,7 +469,8 @@ body {
 }
 @media (max-width: 480px) {
   .atf {
-    background-size: 100% 99.9%;
+    background-image: url("../img/mobileBackground.png");
+    background-size: 100%;
   }
 }
 .contact-us__row {

@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="deleted js code">
-      <change beforePath="$PROJECT_DIR$/#source/html/homePage.kit" beforeDir="false" afterPath="$PROJECT_DIR$/#source/html/homePage.kit" afterDir="false" />
+    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="added navigation">
       <change beforePath="$PROJECT_DIR$/#source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,8 @@
       <workItem from="1624986289944" duration="2821000" />
       <workItem from="1625062743084" duration="10462000" />
       <workItem from="1625074907203" duration="97000" />
-      <workItem from="1625121541319" duration="10793000" />
+      <workItem from="1625121541319" duration="11699000" />
+      <workItem from="1625140904922" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="added new files to git">
       <created>1624966652111</created>
@@ -163,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625130025398</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added navigation">
+      <created>1625135571213</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625135571213</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +196,8 @@
     <MESSAGE value="reload logo &amp; rename classes" />
     <MESSAGE value="vertical adaptation on desktop" />
     <MESSAGE value="deleted js code" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted js code" />
+    <MESSAGE value="added navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added navigation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="708" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623753769342">
@@ -210,10 +217,10 @@
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1624382710923" />
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1623753757551" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1625130030793">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1625135572459">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1625130030793" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1625135572459" />
     <state x="478" y="149" width="579" height="534" key="find.popup" timestamp="1624493638636">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
