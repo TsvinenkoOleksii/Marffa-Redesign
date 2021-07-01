@@ -327,6 +327,20 @@ body {
   height: 100vh;
 }
 
+#fp-nav {
+  background: #101010;
+  opacity: 0.5;
+  border-radius: 60px;
+}
+#fp-nav ul li a span {
+  background-color: #f1f2ec4d;
+  background: #f1f2ec4d;
+}
+#fp-nav ul li .active span {
+  background-color: #F1F2EC;
+  background: #F1F2EC;
+}
+
 .atf {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +381,7 @@ body {
   position: relative;
 }
 .atf__title span:last-child:after {
-  content: url("../img/Rocket.png");
+  content: url("./img/Rocket.png");
   top: 0;
   right: -130px;
   position: absolute;
@@ -489,9 +503,9 @@ body {
   text-align: right;
   position: absolute;
   left: -173px;
-  bottom: 75px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  top: 25%;
+  -webkit-transform: rotate(-90deg) translateY(50%);
+          transform: rotate(-90deg) translateY(50%);
   color: #B8B8B8;
   text-transform: uppercase;
   display: block;
@@ -509,6 +523,11 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   left: -41px;
+}
+@media (max-width: 1200px) {
+  .contact-us__under-block-text a {
+    display: none;
+  }
 }
 @media (max-width: 1023px) {
   .contact-us__under-block-text a {
@@ -807,6 +826,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 480px) {
   .about-us__row-two {
@@ -848,6 +870,11 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+@media (max-width: 1200px) {
+  .about-us__under-block-text a {
+    display: none;
+  }
+}
 @media (max-width: 1023px) {
   .about-us__under-block-text a {
     display: none;
@@ -876,12 +903,22 @@ body {
     margin: 0;
   }
 }
+@media (min-width: 1025px) and (max-height: 650px) {
+  .about-us__column-one {
+    margin-right: 20px !important;
+  }
+}
 .about-us__column-two {
   margin-left: 15px;
 }
 @media (max-width: 480px) {
   .about-us__column-two {
     margin: 0;
+  }
+}
+@media (min-width: 1025px) and (max-height: 650px) {
+  .about-us__column-two {
+    margin-left: 20px !important;
   }
 }
 .about-us__column {

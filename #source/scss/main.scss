@@ -3,12 +3,39 @@
 @import "base/mixins";
 @import "base/global";
 @import "header";
+
+
 body {
   background: linear-gradient(202.62deg, #101010 0%, #101010 0.01%, #202020 100%) !important;
 }
 
 .section {
   height: 100vh;
+}
+#fp-nav {
+  background: #101010;
+  opacity: 0.5;
+  border-radius: 60px;
+  ul{
+    li {
+        a{
+          span{
+          background-color: #f1f2ec4d;
+            background: #f1f2ec4d;
+        }
+      }
+    }
+  }
+  ul{
+    li {
+      .active{
+        span{
+          background-color: #F1F2EC;
+          background: #F1F2EC;
+        }
+      }
+    }
+  }
 }
 
 .atf{
@@ -220,8 +247,8 @@ body {
     text-align: right;
     position: absolute;
     left: -173px;
-    bottom: 75px;
-    transform: rotate(-90deg);
+    top: 25%;
+    transform: rotate(-90deg) translateY(50% );
     color: #B8B8B8;
     text-transform: uppercase;
     display: block;
@@ -240,7 +267,9 @@ body {
 
     @include breakpoint(mediumDesktop){}
 
-    @include breakpoint(smallDesktop){}
+    @include breakpoint(smallDesktop){
+      display: none;
+    }
 
     @include breakpoint(tablet){
       display: none;
@@ -630,6 +659,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: row;
+    justify-content: space-between;
     @include breakpoint(largeDesktop) {
     }
 
@@ -687,6 +717,7 @@ body {
     }
 
     @include breakpoint(smallDesktop) {
+      display: none;
     }
 
     @include breakpoint(tablet) {
@@ -736,6 +767,9 @@ body {
 
     @include breakpoint(mobileSmall) {
     }
+    @include breakpoint(desktopWithHeightSmall) {
+      margin-right: 20px !important;
+    }
   }
 
   &__column-two {
@@ -760,6 +794,9 @@ body {
     }
 
     @include breakpoint(mobileSmall) {
+    }
+    @include breakpoint(desktopWithHeightSmall) {
+      margin-left: 20px !important;
     }
   }
 

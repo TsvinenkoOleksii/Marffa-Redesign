@@ -70,8 +70,33 @@
 <script type="text/javascript" src="./js/fullpage.min.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage',{
-        anchors: ['section0']
+        anchors: ['section0','firstPage', 'secondPage'],
+        menu: '#menu',
+        lockAnchors: false,
+        navigation: true,
+        navigationPosition: 'right',
+        showActiveTooltip: true ,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
     });
+
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+
+            const blockID = anchor.getAttribute('href').substr(1)
+
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+
+
+
 </script>
 </body>
 </html>
