@@ -611,6 +611,17 @@ body {
     @include breakpoint(smallMobileWithHeight) {
 
     }
+    @include breakpoint(desktopWithHeightMedium) {
+      margin-top: 100px;
+    }
+    @include breakpoint(desktopWithHeightSmall) {
+      margin-top: 70px !important;
+    }
+    @include breakpoint(desktopWithHeightVerySmall) {
+      margin-top: 20px !important;
+      font-size: 44px;
+      line-height: 44px;
+    }
 
   }
 
@@ -652,8 +663,8 @@ body {
     text-align: right;
     position: absolute;
     left: -173px;
-    bottom: 150px;
-    transform: rotate(-90deg);
+    top:50%;
+    transform: rotate(-90deg)  translateY(50%);
     color: #E6CD0B;
     text-transform: uppercase;
     display: block;
@@ -818,7 +829,18 @@ body {
       margin-top: 0;
     }
     @include breakpoint(smallMobileWithHeight) {
+    }
 
+
+    @include breakpoint(desktopWithHeightMedium) {
+      margin-top: 40px;
+    }
+    @include breakpoint(desktopWithHeightSmall) {
+      margin-top: 20px !important;
+    }
+    @include breakpoint(desktopWithHeightVerySmall) {
+      margin-top: 20px !important;
+      height: 300px;
     }
   }
 
