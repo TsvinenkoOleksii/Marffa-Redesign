@@ -57,7 +57,7 @@ body {
     color: #E6CD0B;
       position: relative;
       &:last-child:after {
-        content: url("../img/Rocket.png");
+        content: url("./img/Rocket.png");
         top:0;
         right: -130px;
         position: absolute;
