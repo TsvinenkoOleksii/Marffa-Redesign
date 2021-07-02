@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="fixed mobile background atf">
+    <list default="true" id="26f6483b-6312-4696-8c44-de85dd386ff5" name="Default Changelist" comment="animation with loop">
       <change beforePath="$PROJECT_DIR$/#source/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#source/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Contact us stroke.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Contact us stroke.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1625074907203" duration="97000" />
       <workItem from="1625121541319" duration="11699000" />
       <workItem from="1625140904922" duration="672000" />
-      <workItem from="1625221969471" duration="1169000" />
+      <workItem from="1625221969471" duration="3090000" />
     </task>
     <task id="LOCAL-00001" summary="added new files to git">
       <created>1624966652111</created>
@@ -177,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625141563339</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="animation with loop">
+      <created>1625223253521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1625223253522</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +214,8 @@
     <MESSAGE value="deleted js code" />
     <MESSAGE value="added navigation" />
     <MESSAGE value="fixed mobile background atf" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed mobile background atf" />
+    <MESSAGE value="animation with loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="animation with loop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="708" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623753769342">
@@ -226,10 +235,10 @@
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1624382710923" />
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1623753757551" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1625141565320">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1625223254348">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1625141565320" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1625223254348" />
     <state x="478" y="149" width="579" height="534" key="find.popup" timestamp="1624493638636">
       <screen x="0" y="0" width="1536" height="832" />
     </state>

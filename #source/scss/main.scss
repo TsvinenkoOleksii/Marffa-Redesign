@@ -16,6 +16,7 @@ body {
   background: #101010;
   opacity: 0.5;
   border-radius: 60px;
+  display: block;
   ul{
     li {
         a{
@@ -36,6 +37,23 @@ body {
       }
     }
   }
+  @include breakpoint(largeDesktop){}
+
+  @include breakpoint(mediumDesktop){
+  }
+  @include breakpoint(smallDesktop){}
+
+  @include breakpoint(tablet){
+    display: none;
+  }
+
+  @include breakpoint(tabletSmall){
+  }
+
+  @include breakpoint(mobile){}
+
+  @include breakpoint(mobileSmall){}
+
 }
 
 .atf{
@@ -84,7 +102,7 @@ body {
     color: #E6CD0B;
       position: relative;
       &:last-child:after {
-        content: url("./img/Rocket.png");
+        content: url("../img/Rocket.png");
         top:0;
         right: -130px;
         position: absolute;
@@ -154,6 +172,11 @@ body {
     @include breakpoint(smallMobileWithHeight){
       font-size: 41px;
       line-height: 52px;
+    }
+    @include breakpoint(desktopWithHeightVerySmall) {
+      margin-top: 20px !important;
+      font-size: 44px;
+      line-height: 44px;
     }
   }
 
