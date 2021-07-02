@@ -553,47 +553,51 @@ body {
 .contact-us__animation-img-one {
   position: absolute;
   bottom: 0;
-  -webkit-animation: slider 10s linear infinite;
+  -webkit-animation: slider 60s linear infinite;
 }
 @-webkit-keyframes slider {
   0% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-45%);
+            transform: translateX(-45%);
   }
   100% {
-    -webkit-transform: translateX(15%);
-            transform: translateX(15%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 @keyframes slider {
   0% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-45%);
+            transform: translateX(-45%);
   }
   100% {
-    -webkit-transform: translateX(15%);
-            transform: translateX(15%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 .contact-us__animation-img-two {
   position: absolute;
   bottom: 45px;
-  -webkit-animation: slidera 20s linear infinite;
+  -webkit-animation: slidera 60s linear infinite;
 }
 @-webkit-keyframes slidera {
-  from {
-    left: 2000px;
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  to {
-    left: -500px;
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 }
 @keyframes slidera {
-  from {
-    left: 2000px;
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  to {
-    left: -500px;
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 }
 .contact-us__column-one {

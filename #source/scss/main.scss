@@ -300,15 +300,15 @@ body {
   &__animation-img-one {
     position: absolute;
     bottom: 0;
-    -webkit-animation: slider 10s linear infinite;
+    -webkit-animation: slider 60s linear infinite;
 
   }
   @keyframes slider{
     0% {
-      transform: translateX(-50%);
+      transform: translateX(-45%);
     }
     100% {
-      transform: translateX(15%);
+      transform: translateX(-10%);
 
     }
   }
@@ -316,16 +316,16 @@ body {
   &__animation-img-two {
     position: absolute;
     bottom: 45px;
-    -webkit-animation: slidera 20s linear infinite;
+    -webkit-animation: slidera 60s linear infinite;
 
   }
   @keyframes slidera {
-    from {
-      left: 2000px;
+    0% {
+      transform: translateX(0%);
     }
+    100% {
+      transform: translateX(-20%);
 
-    to {
-      left: -500px;
     }
   }
 
