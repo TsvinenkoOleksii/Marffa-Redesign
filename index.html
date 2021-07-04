@@ -22,8 +22,9 @@
         </div>
     </div>
 </div>
+
 <div id="fullpage">
-    <div class="section active atf" id="section0"  data-parallax="scroll" data-image-src="./img/baclgroundFirst.png">
+    <div class="section active atf" id="section0"  data-parallax="scroll" data-image-src="./img/backgroundATF.png">
         <div class="container" >
             <div class="atf__column-one" >
                 <div class="atf__title">We design, build, support and<br> grow stunning websites<br>
@@ -86,8 +87,8 @@
         anchors: ['Atf','firstPage', 'secondPage'],
         sectionsColor: [
             'transparent',
-            '#000',
-            '#000'
+            '#101010',
+            '#101010'
         ],
         menu: '#menu',
         lockAnchors: false,
@@ -95,6 +96,7 @@
         navigationPosition: 'right',
         showActiveTooltip: true ,
         slidesNavigation: true,
+        scrollBar:true,
         slidesNavPosition: 'bottom',
     });
 
@@ -120,14 +122,10 @@
         color: '#fff'
     })
 
-    
 
 
-    $('.parallax-window').parallax({
-        naturalWidth: '100',
-        naturalHeight: '200' ,
-        position:'center right'
-    });
+
+
 
 
 
