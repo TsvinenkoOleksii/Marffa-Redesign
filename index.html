@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-
+    <title>Marffa</title>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="../js/main.js"></script>
@@ -15,16 +15,17 @@
     <div class="container">
         <div class="header__row">
             <div class="header__logo">
-                <a href="#"><embed src="img/Logo.svg"></a>
+                <div class="header__desktop-logo"><a href="#"><embed src="img/Logo.svg"></a></div>
+                <div class="header__mobile-logo"><a href="#"><embed src="img/mobileLogo.svg"></a></div>
             </div>
             <div class="header__button"><a href="#">Book Meeting</a></div>
         </div>
     </div>
 </div>
 <div id="fullpage">
-    <div class="section active atf" id="section0">
-        <div class="container">
-            <div class="atf__column-one">
+    <div class="section active atf" id="section0"  data-parallax="scroll" data-image-src="./img/baclgroundFirst.png">
+        <div class="container" >
+            <div class="atf__column-one" >
                 <div class="atf__title">We design, build, support and<br> grow stunning websites<br>
                     and web apps that<br>
                     <span>skyrocket</span> your <span>sales</span></div>
@@ -62,7 +63,7 @@
             <div class="about-us__column about-us__column-one">
                 <div class="about-us__subtitle">Meet our team</div>
                 <div class="about-us__text">People who make these things possible daily.</div>
-                <div class="about-us__btn"><a href="#">Learn more</a></div>
+                <div class="about-us__btn"><a href="https://marffa.com/people/">Learn more</a></div>
             </div>
             <div class="about-us__column about-us__column-two">
                 <div class="about-us__subtitle">Our portfolio</div>
@@ -76,9 +77,18 @@
 </div>
 
 <script type="text/javascript" src="./js/fullpage.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/parallax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/kursor"></script>
 <script type="text/javascript">
+
     var myFullpage = new fullpage('#fullpage',{
-        anchors: ['section0','firstPage', 'secondPage'],
+        anchors: ['Atf','firstPage', 'secondPage'],
+        sectionsColor: [
+            'transparent',
+            '#000',
+            '#000'
+        ],
         menu: '#menu',
         lockAnchors: false,
         navigation: true,
@@ -102,6 +112,22 @@
             })
         })
     }
+
+
+    new kursor({
+        type: 1,
+        removeDefaultCursor: true,
+        color: '#fff'
+    })
+
+    
+
+
+    $('.parallax-window').parallax({
+        naturalWidth: '100',
+        naturalHeight: '200' ,
+        position:'center right'
+    });
 
 
 
