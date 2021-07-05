@@ -109,72 +109,82 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 
 
   &__img-parallax {
-  img {
     position: absolute;
     top: 0;
     right: 0;
     width: 56.5%;
     height: 100%;
-    object-fit: cover;
-    display: block;
-    z-index: 1;
+    z-index: 0;
     border: none;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
 
-    }
+
     &:before {
       content: '';
       background-color: #111111;
       top: 0;
       right: 0;
-      width: 56.5%;
+      width: 100%;
       height: 100%;
       position: absolute;
       animation: image-in 1s cubic-bezier(0, 0.5, 0.1, 1) 4s forwards;
       z-index: 0;
-  }
-
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){
-    }
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){
-
     }
 
-    @include breakpoint(mobile){
+    @include breakpoint(largeDesktop) {
+    }
+
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
+
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(tabletSmall) {
+
+    }
+
+    @include breakpoint(mobile) {
       display: none;
     }
 
-    @include breakpoint(mobileSmall){}
+    @include breakpoint(mobileSmall) {
+    }
 
-}
+  }
 
 
   &__column-one {
     width: 952px;
     animation: outer-left 2s 2s ease both;
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){
+    @include breakpoint(largeDesktop) {
     }
-    @include breakpoint(smallDesktop){}
 
-    @include breakpoint(tablet){}
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
 
-    @include breakpoint(tabletSmall){
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(tabletSmall) {
       width: 100%;
     }
 
-    @include breakpoint(mobile){}
+    @include breakpoint(mobile) {
+    }
 
-    @include breakpoint(mobileSmall){}
+    @include breakpoint(mobileSmall) {
+    }
 
   }
 
@@ -195,27 +205,34 @@ body {
     justify-content: center;
 
 
-
     span {
-    color: #E6CD0B;
+      color: #E6CD0B;
       position: relative;
+
       &:last-child:after {
         content: url("../img/Rocket.png");
-        top:50%;
+        top: 50%;
         transform: translateY(-50%);
         right: -70px;
         position: absolute;
         display: block;
-        @include breakpoint(largeDesktop){}
-        @include breakpoint(mediumDesktop){}
-        @include breakpoint(smallDesktop){}
-        @include breakpoint(tablet){}
-        @include breakpoint(tabletSmall){}
-        @include breakpoint(mobile){
+        @include breakpoint(largeDesktop) {
+        }
+        @include breakpoint(mediumDesktop) {
+        }
+        @include breakpoint(smallDesktop) {
+        }
+        @include breakpoint(tablet) {
+        }
+        @include breakpoint(tabletSmall) {
+        }
+        @include breakpoint(mobile) {
           display: none;
         }
-        @include breakpoint(mobileSmall){}
+        @include breakpoint(mobileSmall) {
+        }
       }
+
       img {
         width: 55px;
         height: 55px;
@@ -225,60 +242,69 @@ body {
 
     br {
       display: block;
-      @include breakpoint(largeDesktop){}
+      @include breakpoint(largeDesktop) {
+      }
 
-      @include breakpoint(mediumDesktop){}
+      @include breakpoint(mediumDesktop) {
+      }
 
-      @include breakpoint(smallDesktop){}
+      @include breakpoint(smallDesktop) {
+      }
 
-      @include breakpoint(tablet){}
+      @include breakpoint(tablet) {
+      }
 
-      @include breakpoint(tabletSmall){
+      @include breakpoint(tabletSmall) {
         display: none;
       }
 
-      @include breakpoint(mobile){
+      @include breakpoint(mobile) {
       }
 
-      @include breakpoint(mobileSmall){}
+      @include breakpoint(mobileSmall) {
+      }
     }
 
 
-    @include breakpoint(largeDesktop){}
+    @include breakpoint(largeDesktop) {
+    }
 
-    @include breakpoint(mediumDesktop){}
+    @include breakpoint(mediumDesktop) {
+    }
 
-    @include breakpoint(smallDesktop){}
+    @include breakpoint(smallDesktop) {
+    }
 
-    @include breakpoint(tablet){
+    @include breakpoint(tablet) {
       font-size: 70px;
       line-height: 80px;
 
     }
 
-    @include breakpoint(tabletSmall){}
+    @include breakpoint(tabletSmall) {
+    }
 
-    @include breakpoint(mobile){
+    @include breakpoint(mobile) {
       font-size: 30px;
       line-height: 45px;
       margin-bottom: 20px;
       margin-top: 90px;
     }
 
-    @include breakpoint(mobileSmall){
+    @include breakpoint(mobileSmall) {
       font-size: 35px;
       line-height: 47px;
     }
-    @include breakpoint(bigMobileWithHeight){
+    @include breakpoint(bigMobileWithHeight) {
       font-size: 45px;
       line-height: 56px;
       margin-top: 50px;
       margin-bottom: 20px;
     }
-    @include breakpoint(mobileWithHeight){
+    @include breakpoint(mobileWithHeight) {
 
     }
-    @include breakpoint(smallMobileWithHeight){
+    @include breakpoint(smallMobileWithHeight) {
       font-size: 41px;
       line-height: 52px;
     }
@@ -292,142 +318,180 @@ body {
 
   &__design-build {
     animation: inner-left 0.5s 1s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
-    @include breakpoint(largeDesktop){}
-    @include breakpoint(mediumDesktop){}
-    @include breakpoint(smallDesktop){}
-    @include breakpoint(tablet){}
-    @include breakpoint(tabletSmall){}
-    @include breakpoint(mobile){
+    z-index: 2;
+    @include breakpoint(largeDesktop) {
+    }
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(tabletSmall) {
+    }
+    @include breakpoint(mobile) {
       @keyframes inner-left {
         from {
-          transform: translate3d(110% , 0 , 0);
+          transform: translate3d(110%, 0, 0);
         }
         to {
           transform: none;
         }
       }
     }
-    @include breakpoint(mobileSmall){}
+    @include breakpoint(mobileSmall) {
+    }
   }
 
-  &__grow-stunning{
+  &__grow-stunning {
     animation: inner-left 0.5s 1.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
-    @include breakpoint(largeDesktop){}
-    @include breakpoint(mediumDesktop){}
-    @include breakpoint(smallDesktop){}
-    @include breakpoint(tablet){}
-    @include breakpoint(tabletSmall){}
-    @include breakpoint(mobile){
+    z-index: 2;
+    @include breakpoint(largeDesktop) {
+    }
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(tabletSmall) {
+    }
+    @include breakpoint(mobile) {
       @keyframes inner-left {
         from {
-          transform: translate3d(110% , 0 , 0);
+          transform: translate3d(110%, 0, 0);
         }
         to {
           transform: none;
         }
       }
     }
-    @include breakpoint(mobileSmall){}
+    @include breakpoint(mobileSmall) {
+    }
   }
 
   &__web-apps {
     animation: inner-left 0.5s 2s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
-    @include breakpoint(largeDesktop){}
-    @include breakpoint(mediumDesktop){}
-    @include breakpoint(smallDesktop){}
-    @include breakpoint(tablet){}
-    @include breakpoint(tabletSmall){}
-    @include breakpoint(mobile){
+    z-index: 2;
+    @include breakpoint(largeDesktop) {
+    }
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(tabletSmall) {
+    }
+    @include breakpoint(mobile) {
       @keyframes inner-left {
         from {
-          transform: translate3d(110% , 0 , 0);
+          transform: translate3d(110%, 0, 0);
         }
         to {
           transform: none;
         }
       }
     }
-    @include breakpoint(mobileSmall){}
+    @include breakpoint(mobileSmall) {
+    }
   }
 
-  &__skyrocket-sales{
+  &__skyrocket-sales {
     animation: inner-left 0.5s 2.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
-    @include breakpoint(largeDesktop){}
-    @include breakpoint(mediumDesktop){}
-    @include breakpoint(smallDesktop){}
-    @include breakpoint(tablet){}
-    @include breakpoint(tabletSmall){}
-    @include breakpoint(mobile){
+    z-index: 2;
+    @include breakpoint(largeDesktop) {
+    }
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(tabletSmall) {
+    }
+    @include breakpoint(mobile) {
       @keyframes inner-left {
         from {
-          transform: translate3d(110% , 0 , 0);
+          transform: translate3d(110%, 0, 0);
         }
         to {
           transform: none;
         }
       }
     }
-    @include breakpoint(mobileSmall){}
+    @include breakpoint(mobileSmall) {
+    }
   }
 
-  &__subtitle a {
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 69px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #E6CD0B;
-    text-transform: uppercase;
-    margin-left: 24px;
-    position: relative;
+  &__subtitle {
     animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
 
-    &:after {
-      content: url("../img/arrow.svg");
-      position: absolute;
-      left: -20px;
-      top: 50%;
-      transform: translateY(-45%);
-      transition: all 0.3s;
-      display: block;
+    a {
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 69px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #E6CD0B;
+      text-transform: uppercase;
+      margin-left: 24px;
+      position: relative;
+
+
+      &:before {
+        content: url("../img/arrow.svg");
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-45%);
+        transition: all 0.3s;
+        display: block;
+
+      }
+
+      &:hover:before {
+        transform: translateY(-40%);
+        transition: all 0.3s;
+      }
+
     }
-    &:hover:before {
-      transform: translateY(-40%);
-      transition: all 0.3s;
+
+    @include breakpoint(largeDesktop) {
+    }
+
+    @include breakpoint(mediumDesktop) {
+    }
+    @include breakpoint(smallDesktop) {
+    }
+
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(tabletSmall) {
+      display: none;
+    }
+
+    @include breakpoint(mobile) {
+      background-image: url("../img/mobileBackground.png") !important;
+      background-size: 100% !important;
+      z-index: 2;
+    }
+
+    @include breakpoint(mobileSmall) {
+    }
+    @include breakpoint(bigMobileWithHeight) {
+    }
+    @include breakpoint(mobileWithHeight) {
+
+    }
+    @include breakpoint(smallMobileWithHeight) {
+
     }
 
   }
-
-  @include breakpoint(largeDesktop){}
-
-  @include breakpoint(mediumDesktop){
-  }
-  @include breakpoint(smallDesktop){}
-
-  @include breakpoint(tablet){}
-
-  @include breakpoint(tabletSmall){
-    display: none;
-  }
-
-  @include breakpoint(mobile){
-    background-image: url("../img/mobileBackground.png") !important;
-    background-size: 100% !important;
-    z-index: 2;
-  }
-
-  @include breakpoint(mobileSmall){}
-  @include breakpoint(bigMobileWithHeight){
-  }
-  @include breakpoint(mobileWithHeight){
-
-  }
-  @include breakpoint(smallMobileWithHeight){
-
-  }
-
 }
 
 .contact-us {

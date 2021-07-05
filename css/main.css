@@ -491,25 +491,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
-.atf__img-parallax img {
+.atf__img-parallax {
   position: absolute;
   top: 0;
   right: 0;
   width: 56.5%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  z-index: 1;
+  z-index: 0;
   border: none;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 .atf__img-parallax:before {
   content: "";
   background-color: #111111;
   top: 0;
   right: 0;
-  width: 56.5%;
+  width: 100%;
   height: 100%;
   position: absolute;
   -webkit-animation: image-in 1s cubic-bezier(0, 0.5, 0.1, 1) 4s forwards;
@@ -628,6 +630,7 @@ body {
 .atf__design-build {
   -webkit-animation: inner-left 0.5s 1s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
           animation: inner-left 0.5s 1s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+  z-index: 2;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -654,6 +657,7 @@ body {
 .atf__grow-stunning {
   -webkit-animation: inner-left 0.5s 1.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
           animation: inner-left 0.5s 1.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+  z-index: 2;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -680,6 +684,7 @@ body {
 .atf__web-apps {
   -webkit-animation: inner-left 0.5s 2s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
           animation: inner-left 0.5s 2s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+  z-index: 2;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -706,6 +711,7 @@ body {
 .atf__skyrocket-sales {
   -webkit-animation: inner-left 0.5s 2.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
           animation: inner-left 0.5s 2.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+  z-index: 2;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -729,6 +735,10 @@ body {
     }
   }
 }
+.atf__subtitle {
+  -webkit-animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
 .atf__subtitle a {
   font-family: Poppins;
   font-size: 14px;
@@ -741,10 +751,8 @@ body {
   text-transform: uppercase;
   margin-left: 24px;
   position: relative;
-  -webkit-animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
-.atf__subtitle a:after {
+.atf__subtitle a:before {
   content: url("../img/arrow.svg");
   position: absolute;
   left: -20px;
@@ -762,12 +770,12 @@ body {
   transition: all 0.3s;
 }
 @media (max-width: 768px) {
-  .atf {
+  .atf__subtitle {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  .atf {
+  .atf__subtitle {
     background-image: url("../img/mobileBackground.png") !important;
     background-size: 100% !important;
     z-index: 2;
