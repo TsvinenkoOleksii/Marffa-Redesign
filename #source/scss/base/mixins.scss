@@ -48,6 +48,14 @@
     @media (max-width: 370px) {
       @content;
     }
+    }@else if $point == mobileSE {
+    @media (max-width: 320px) and (max-height: 454px) {
+      @content;
+    }
+  }@else if $point == mobileSix {
+    @media (max-width: 375px) and (max-height: 559px) {
+      @content;
+    }
   } @else if $point == desktopWithHeightMedium {
     @media (min-width:1025px) and (max-height: 787px) {
       @content;

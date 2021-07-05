@@ -17,6 +17,10 @@ body {
 .section {
   height: 100vh;
 }
+.parallax-window {
+ height: 300px;
+  background: transparent;
+}
 #fp-nav {
   background: #101010;
   opacity: 0.5;
@@ -88,7 +92,13 @@ body {
     transform: none;
   }
 }
+.parallax-window {
 
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-attachment: fixed !important;
+  background-size: 56.5% 99.9%;
+}
 .atf{
   display:flex;
   flex-direction: column;
@@ -121,6 +131,17 @@ body {
     @include breakpoint(mobile){}
 
     @include breakpoint(mobileSmall){}
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 43.5%;
+      background-color: #111111;
+      z-index: -1;
+      animation: outer-left 0s 0s ease both;
+    }
   }
 
   &__title {
@@ -146,8 +167,9 @@ body {
       position: relative;
       &:last-child:after {
         content: url("../img/Rocket.png");
-        top:0;
-        right: -130px;
+        top:50%;
+        transform: translateY(-50%);
+        right: -70px;
         position: absolute;
         display: block;
         @include breakpoint(largeDesktop){}
@@ -784,6 +806,9 @@ body {
       width: 100%;
       margin-top: 50px;
     }
+    @include breakpoint(mobileSix) {
+      display: none;
+    }
 
     @include breakpoint(mobileSmall) {
       font-size: 35px;
@@ -937,8 +962,12 @@ body {
       margin: 0;
       margin-top: 0px !important;
     }
+    @include breakpoint(mobileSix) {
+      margin-top: 60px !important;
+    }
 
     @include breakpoint(mobileSmall) {
+      margin-top: 30px !important;
     }
     @include breakpoint(desktopWithHeightSmall) {
       margin-right: 20px !important;
@@ -1030,6 +1059,14 @@ body {
     }
 
     @include breakpoint(mobileSmall) {
+
+    }
+    @include breakpoint(mobileSE) {
+      height: 170px;
+    }
+    @include breakpoint(mobileSix) {
+      height: 230px;
+
     }
     @include breakpoint(bigMobileWithHeight) {
       margin-top: 20px;
@@ -1107,6 +1144,9 @@ body {
 
       @include breakpoint(mobileSmall) {
       }
+      @include breakpoint(mobileSmall) {
+        bottom: -5px;
+      }
 
 
     }
@@ -1137,6 +1177,9 @@ body {
       font-size: 22px;
       line-height: 32px;
       padding: 10px 0 0 0;
+    }
+    @include breakpoint(mobileSmall) {
+      margin-bottom: 5px;
     }
     @include breakpoint(bigMobileWithHeight) {
     }
@@ -1264,6 +1307,11 @@ body {
       @include breakpoint(mobileSmall) {
         //padding: 0 0 10px 0;
       }
+      @include breakpoint(mobileSE) {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+      }
       @include breakpoint(bigMobileWithHeight) {
       }
 
@@ -1295,6 +1343,12 @@ body {
       @include breakpoint(mobileSmall) {
         margin: 20px auto 0px auto !important;
       }
+    @include breakpoint(mobileSE) {
+      margin: 10px auto 0px auto !important;
+    }
+    @include breakpoint(mobileSix) {
+      margin: 20px auto 0px auto !important;
+    }
       @include breakpoint(bigMobileWithHeight) {
       }
 

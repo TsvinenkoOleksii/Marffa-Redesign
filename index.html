@@ -25,7 +25,7 @@
     </div>
 </div>
 <div id="fullpage">
-    <div class="section active atf" id="section0"  data-parallax="scroll" data-image-src="./img/backgroundATF.png">
+    <div class="section active atf" id="section0"  data-parallax="scroll" data-natural-width="500"  data-natural-height="500" data-speed="0.1" data-image-src="./img/baclgroundFirst.png"  >
         <div class="container" >
             <div class="atf__column-one" >
                 <div class="atf__title">
@@ -85,7 +85,7 @@
 <script type="text/javascript">
 
     var myFullpage = new fullpage('#fullpage',{
-        anchors: ['atf','contact-us', 'about-us'],
+        anchors: ['firstScreen','secondScreen', 'thirdScreen'],
         sectionsColor: [
             'transparent',
             '#101010',
@@ -99,7 +99,10 @@
         slidesNavigation: true,
         scrollingSpeed: 1400,
         slidesNavPosition: 'bottom',
+        fitToSection: true,
+        fitToSectionDelay: 1000,
     });
+
 
     const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -123,9 +126,11 @@
         color: '#fff'
     })
 
-    $('.parallax-window').parallax({
-        androidFix:true,
-        iosFix:true,
+    $(document).ready(function() {
+        $('.parallax-window').parallax({
+            naturalWidth: 600,
+            naturalHeight: 400
+        });
     });
 
 
