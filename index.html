@@ -25,7 +25,8 @@
     </div>
 </div>
 <div id="fullpage">
-    <div class="section active atf" id="section0"  data-parallax="scroll" data-natural-width="500"  data-natural-height="500" data-speed="0.1" data-image-src="./img/baclgroundFirst.png"  >
+    <div class="section active atf" id="section0" >
+        <img data-parallax="scroll" data-image-src="../img/backgroundFirst.png">
         <div class="container" >
             <div class="atf__column-one" >
                 <div class="atf__title">
@@ -33,49 +34,49 @@
                     <div class="atf__grow-stunning">grow stunning websites</div>
                     <div class="atf__web-apps">and web apps that</div>
                     <div class="atf__skyrocket-sales"><span>skyrocket</span> your <span>sales</span></div>
-                    </div>
-                <div class="atf__subtitle"><a href="#section1">Scroll to see more</a></div>
+                </div>
+                <div class="atf__subtitle"> <a href="#section1">Scroll to see more</a></div>
+            </div>
         </div>
     </div>
-    </div>
-        <div class="section contact-us" id="section1">
-            <div class="container">
-                <div class="contact-us__row">
+    <div class="section contact-us" id="section1">
+        <div class="container">
+            <div class="contact-us__row">
                 <div class="contact-us__column-one">
                     <div class="contact-us__title">How<span>?</span></div>
                     <div class="contact-us__text">We'll soon explain further in case studies, but while that section of the website is in development — feel free to <b>contact us</b> and hear our stories </div>
-            </div>
+                </div>
                 <div class="contact-us__column-two">
                     <a href="mailto:dmytro@marffa.com ">dmytro@marffa.com</a> <a href="tel:+358 41 742 9684">+358 41 742 9684</a>
                 </div>
-                    <div class="contact-us__under-block-text"><a href="#section2" >Scroll to see more</a></div>
+                <div class="contact-us__under-block-text"><a href="#section2" >Scroll to see more</a></div>
 
-                </div>
+            </div>
         </div>
-            <div class="contact-us__animation-img-one"><embed src="./img/Contact us stroke.svg"></div>
+        <div class="contact-us__animation-img-one"><embed src="./img/Contact us stroke.svg"></div>
 
-            <div class="contact-us__animation-img-two"><embed src="./img/Contact us stroke.svg"></div>
-        </div>
+        <div class="contact-us__animation-img-two"><embed src="./img/Contact us stroke.svg"></div>
+    </div>
     <div class="section about-us" id="section2">
         <div class="container">
             <div class="about-us__row">
                 <div class="about-us__title">Meanwhile, <span>check this</span>: </div>
             </div>
             <div class="about-us__row-two">
-            <div class="about-us__column about-us__column-one">
-                <div class="about-us__subtitle">Meet our team</div>
-                <div class="about-us__text">People who make these things possible daily.</div>
-                <div class="about-us__btn"><a href="https://marffa.com/people/">Learn more</a></div>
-            </div>
-            <div class="about-us__column about-us__column-two">
-                <div class="about-us__subtitle">Our portfolio</div>
-                <div class="about-us__text">Most often it is this page, where clients decide to go ahead with us.</div>
-                <div class="about-us__btn"><a href="https://marffa.com/portfolio/">Learn more</a></div>
-            </div>
+                <div class="about-us__column about-us__column-one">
+                    <div class="about-us__subtitle">Meet our team</div>
+                    <div class="about-us__text">People who make these things possible daily.</div>
+                    <div class="about-us__btn"><a href="https://marffa.com/people/">Learn more</a></div>
+                </div>
+                <div class="about-us__column about-us__column-two">
+                    <div class="about-us__subtitle">Our portfolio</div>
+                    <div class="about-us__text">Most often it is this page, where clients decide to go ahead with us.</div>
+                    <div class="about-us__btn"><a href="https://marffa.com/portfolio/">Learn more</a></div>
+                </div>
                 <div class="about-us__under-block-text"><a href="#section0" >BACK TO FIRST SCREEN</a></div>
             </div>
         </div>
-        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="./js/fullpage.min.js"></script>
@@ -129,7 +130,8 @@
     $(document).ready(function() {
         $('.parallax-window').parallax({
             naturalWidth: 600,
-            naturalHeight: 400
+            naturalHeight: 400,
+
         });
     });
 
@@ -143,19 +145,20 @@
       @mousemove="handleMouseMove"
       @mouseenter="handleMouseEnter"
       @mouseleave="handleMouseLeave"
-      ref="card">
-      <div class="card"
+      ref="about-us__column-one">
+      <div class="about-us__column-one"
         :style="cardStyle">
         <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
         <div class="card-info">
-          <slot name="header"></slot>
-          <slot name="content"></slot>
+         <div class="about-us__subtitle"></div>
+         <div class="about-us__text"></div>
+         <div class="about-us__btn"></div>
         </div>
       </div>
     </div>`,
         mounted() {
-            this.width = this.$refs.card.offsetWidth;
-            this.height = this.$refs.card.offsetHeight;
+            this.width = this.$refs.about-us__column.offsetWidth;
+            this.height = this.$refs.about-us__column.offsetHeight;
         },
         props: ['dataImage'],
         data: () => ({
@@ -194,8 +197,8 @@
         },
         methods: {
             handleMouseMove(e) {
-                this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width/2;
-                this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height/2;
+                this.mouseX = e.pageX - this.$refs.about-us__column.offsetLeft - this.width/2;
+                this.mouseY = e.pageY - this.$refs.about-us__column.offsetTop - this.height/2;
             },
             handleMouseEnter() {
                 clearTimeout(this.mouseLeaveDelay);
