@@ -10,6 +10,8 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 body {
   background: linear-gradient(202.62deg, #101010 0%, #101010 0.01%, #202020 100%) !important;
+  overflow: hidden !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 .section {
@@ -20,6 +22,7 @@ body {
   opacity: 0.5;
   border-radius: 60px;
   display: block;
+  animation: text-clip 2s 6s cubic-bezier(0.5, 0, 0.1, 1) both;
   ul{
     li {
         a{
@@ -59,10 +62,39 @@ body {
 
 }
 
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translate3d(60% , 0 , 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .atf{
   display:flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   //background-image: url("../img/baclgroundFirst.png");
   //background-repeat: no-repeat;
   //background-position: center right;
@@ -70,8 +102,10 @@ body {
   //background-size: 56.5% 99.9%;
 
 
+
   &__column-one {
     width: 952px;
+    animation: outer-left 2s 2s ease both;
     @include breakpoint(largeDesktop){}
 
     @include breakpoint(mediumDesktop){
@@ -101,6 +135,11 @@ body {
     margin-bottom: 64px;
     margin-top: 184px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
 
     span {
     color: #E6CD0B;
@@ -110,6 +149,16 @@ body {
         top:0;
         right: -130px;
         position: absolute;
+        display: block;
+        @include breakpoint(largeDesktop){}
+        @include breakpoint(mediumDesktop){}
+        @include breakpoint(smallDesktop){}
+        @include breakpoint(tablet){}
+        @include breakpoint(tabletSmall){}
+        @include breakpoint(mobile){
+          display: none;
+        }
+        @include breakpoint(mobileSmall){}
       }
       img {
         width: 55px;
@@ -154,10 +203,10 @@ body {
     @include breakpoint(tabletSmall){}
 
     @include breakpoint(mobile){
-      font-size: 47px;
-      line-height: 67px;
+      font-size: 30px;
+      line-height: 45px;
       margin-bottom: 20px;
-
+      margin-top: 90px;
     }
 
     @include breakpoint(mobileSmall){
@@ -181,7 +230,88 @@ body {
       margin-top: 20px !important;
       font-size: 44px;
       line-height: 44px;
+
     }
+  }
+
+  &__design-build {
+    animation: inner-left 1s 2s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    @include breakpoint(largeDesktop){}
+    @include breakpoint(mediumDesktop){}
+    @include breakpoint(smallDesktop){}
+    @include breakpoint(tablet){}
+    @include breakpoint(tabletSmall){}
+    @include breakpoint(mobile){
+      @keyframes inner-left {
+        from {
+          transform: translate3d(110% , 0 , 0);
+        }
+        to {
+          transform: none;
+        }
+      }
+    }
+    @include breakpoint(mobileSmall){}
+  }
+
+  &__grow-stunning{
+    animation: inner-left 1s 3s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    @include breakpoint(largeDesktop){}
+    @include breakpoint(mediumDesktop){}
+    @include breakpoint(smallDesktop){}
+    @include breakpoint(tablet){}
+    @include breakpoint(tabletSmall){}
+    @include breakpoint(mobile){
+      @keyframes inner-left {
+        from {
+          transform: translate3d(110% , 0 , 0);
+        }
+        to {
+          transform: none;
+        }
+      }
+    }
+    @include breakpoint(mobileSmall){}
+  }
+
+  &__web-apps {
+    animation: inner-left 1s 4s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    @include breakpoint(largeDesktop){}
+    @include breakpoint(mediumDesktop){}
+    @include breakpoint(smallDesktop){}
+    @include breakpoint(tablet){}
+    @include breakpoint(tabletSmall){}
+    @include breakpoint(mobile){
+      @keyframes inner-left {
+        from {
+          transform: translate3d(110% , 0 , 0);
+        }
+        to {
+          transform: none;
+        }
+      }
+    }
+    @include breakpoint(mobileSmall){}
+  }
+
+  &__skyrocket-sales{
+    animation: inner-left 1s 5s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    @include breakpoint(largeDesktop){}
+    @include breakpoint(mediumDesktop){}
+    @include breakpoint(smallDesktop){}
+    @include breakpoint(tablet){}
+    @include breakpoint(tabletSmall){}
+    @include breakpoint(mobile){
+      @keyframes inner-left {
+        from {
+          transform: translate3d(110% , 0 , 0);
+        }
+        to {
+          transform: none;
+        }
+      }
+    }
+    @include breakpoint(mobileSmall){}
   }
 
   &__subtitle a {
@@ -196,6 +326,8 @@ body {
     text-transform: uppercase;
     margin-left: 24px;
     position: relative;
+    animation: text-clip 2s 6s cubic-bezier(0.5, 0, 0.1, 1) both;
+
     &:before {
       content: url("../img/arrow.svg");
       position: absolute;
@@ -204,6 +336,7 @@ body {
       transform: translateY(-45%);
       transition: all 0.3s;
       display: block;
+      animation: text-clip 2s 6s cubic-bezier(0.5, 0, 0.1, 1) both;
     }
     &:hover:before {
       transform: translateY(-40%);
@@ -225,8 +358,9 @@ body {
   }
 
   @include breakpoint(mobile){
-    background-image: url("../img/mobileBackground.png");
-    background-size: 100%;
+    background-image: url("../img/mobileBackground.png") !important;
+    background-size: 100% !important;
+    z-index: 2;
   }
 
   @include breakpoint(mobileSmall){}
@@ -801,7 +935,7 @@ body {
 
     @include breakpoint(mobile) {
       margin: 0;
-      margin-top: 60px !important;
+      margin-top: 0px !important;
     }
 
     @include breakpoint(mobileSmall) {
