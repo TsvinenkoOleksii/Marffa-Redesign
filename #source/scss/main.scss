@@ -9,7 +9,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 
 body {
-  background: linear-gradient(202.62deg, #101010 0%, #101010 0.01%, #202020 100%) !important;
+  background: #111111;
   overflow: hidden !important;
   -webkit-font-smoothing: antialiased;
 }
@@ -26,7 +26,7 @@ body {
   opacity: 0.5;
   border-radius: 60px;
   display: block;
-  animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: text-clip 2s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
   ul{
     li {
         a{
@@ -92,39 +92,49 @@ body {
     transform: none;
   }
 }
-.parallax-window {
+@keyframes image-in {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
 
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-attachment: fixed !important;
-  background-size: 56.5% 99.9%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
 }
-.atf{
-  display:flex;
+
+.atf {
+  display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
 
-  img{
- position: absolute;
-  top: 0;
+
+  &__img-parallax {
+  img {
+    position: absolute;
+    top: 0;
     right: 0;
     width: 56.5%;
     height: 100%;
     object-fit: cover;
     display: block;
-    
-    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 6s backwards;
+    z-index: 1;
+    border: none;
 
-    @keyframes image-in {
-      from {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      }
-      to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      }
     }
+    &:before {
+      content: '';
+      background-color: #111111;
+      top: 0;
+      right: 0;
+      width: 56.5%;
+      height: 100%;
+      position: absolute;
+      animation: image-in 1s cubic-bezier(0, 0.5, 0.1, 1) 4s forwards;
+      z-index: 0;
+  }
 
     @include breakpoint(largeDesktop){}
 
@@ -144,7 +154,7 @@ body {
 
     @include breakpoint(mobileSmall){}
 
-  }
+}
 
 
   &__column-one {
@@ -281,7 +291,7 @@ body {
   }
 
   &__design-build {
-    animation: inner-left 1s 2s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: inner-left 0.5s 1s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
     @include breakpoint(largeDesktop){}
     @include breakpoint(mediumDesktop){}
     @include breakpoint(smallDesktop){}
@@ -301,7 +311,7 @@ body {
   }
 
   &__grow-stunning{
-    animation: inner-left 1s 3s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: inner-left 0.5s 1.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
     @include breakpoint(largeDesktop){}
     @include breakpoint(mediumDesktop){}
     @include breakpoint(smallDesktop){}
@@ -321,7 +331,7 @@ body {
   }
 
   &__web-apps {
-    animation: inner-left 1s 4s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: inner-left 0.5s 2s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
     @include breakpoint(largeDesktop){}
     @include breakpoint(mediumDesktop){}
     @include breakpoint(smallDesktop){}
@@ -341,7 +351,7 @@ body {
   }
 
   &__skyrocket-sales{
-    animation: inner-left 1s 5s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: inner-left 0.5s 2.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
     @include breakpoint(largeDesktop){}
     @include breakpoint(mediumDesktop){}
     @include breakpoint(smallDesktop){}
@@ -372,7 +382,7 @@ body {
     text-transform: uppercase;
     margin-left: 24px;
     position: relative;
-    animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
 
     &:after {
       content: url("../img/arrow.svg");

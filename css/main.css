@@ -248,8 +248,8 @@ b {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 125px;
-  -webkit-animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: text-clip 2s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: text-clip 2s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 @media (max-width: 480px) {
   .header__row {
@@ -361,7 +361,7 @@ b {
 }
 
 body {
-  background: linear-gradient(202.62deg, #101010 0%, #101010 0.01%, #202020 100%) !important;
+  background: #111111;
   overflow: hidden !important;
   -webkit-font-smoothing: antialiased;
 }
@@ -380,8 +380,8 @@ body {
   opacity: 0.5;
   border-radius: 60px;
   display: block;
-  -webkit-animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: text-clip 2s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: text-clip 2s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 #fp-nav ul li a span {
   background-color: #f1f2ec4d;
@@ -456,13 +456,26 @@ body {
             transform: none;
   }
 }
-.parallax-window {
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-attachment: fixed !important;
-  background-size: 56.5% 99.9%;
+@-webkit-keyframes image-in {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
 }
-
+@keyframes image-in {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+}
 .atf {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,7 +492,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.atf img {
+.atf__img-parallax img {
   position: absolute;
   top: 0;
   right: 0;
@@ -488,31 +501,23 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  -webkit-animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 6s backwards;
-          animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 6s backwards;
+  z-index: 1;
+  border: none;
 }
-@-webkit-keyframes image-in {
-  from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-@keyframes image-in {
-  from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
+.atf__img-parallax:before {
+  content: "";
+  background-color: #111111;
+  top: 0;
+  right: 0;
+  width: 56.5%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: image-in 1s cubic-bezier(0, 0.5, 0.1, 1) 4s forwards;
+          animation: image-in 1s cubic-bezier(0, 0.5, 0.1, 1) 4s forwards;
+  z-index: 0;
 }
 @media (max-width: 480px) {
-  .atf img {
+  .atf__img-parallax {
     display: none;
   }
 }
@@ -621,8 +626,8 @@ body {
   }
 }
 .atf__design-build {
-  -webkit-animation: inner-left 1s 2s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: inner-left 1s 2s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: inner-left 0.5s 1s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 0.5s 1s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -647,8 +652,8 @@ body {
   }
 }
 .atf__grow-stunning {
-  -webkit-animation: inner-left 1s 3s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: inner-left 1s 3s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: inner-left 0.5s 1.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 0.5s 1.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -673,8 +678,8 @@ body {
   }
 }
 .atf__web-apps {
-  -webkit-animation: inner-left 1s 4s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: inner-left 1s 4s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: inner-left 0.5s 2s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 0.5s 2s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -699,8 +704,8 @@ body {
   }
 }
 .atf__skyrocket-sales {
-  -webkit-animation: inner-left 1s 5s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: inner-left 1s 5s ease both, text-clip 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: inner-left 0.5s 2.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 0.5s 2.5s ease both, text-clip 1s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 @media (max-width: 480px) {
   @-webkit-keyframes inner-left {
@@ -736,8 +741,8 @@ body {
   text-transform: uppercase;
   margin-left: 24px;
   position: relative;
-  -webkit-animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: text-clip 2s 7s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: text-clip 1s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 .atf__subtitle a:after {
   content: url("../img/arrow.svg");
