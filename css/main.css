@@ -1509,6 +1509,7 @@ body {
   border: 0px;
   background-size: 110% 110%;
   background-position: center center;
+  border-radius: 10px;
 }
 
 .dcard {
