@@ -54,15 +54,45 @@
             </div>
             <div class="about-us__row-two">
                 <div class="about-us__column about-us__column-one">
-                    <div class="about-us__subtitle">Meet our team</div>
-                    <div class="about-us__text">People who make these things possible daily.</div>
-                    <div class="about-us__btn"><a href="https://marffa.com/people/">Learn more</a></div>
+                    <div class="dcard">
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="paracard" style="background-image: url(../img/meetOurTeam.jpg);">
+                            <div class="frame">
+                                <div class="about-us__subtitle">Meet our team</div>
+                                <div class="about-us__text">People who make these things possible daily.</div>
+                                <div class="about-us__btn"><a href="https://marffa.com/people/">Learn more</a></div>
+                            </div>
+                        </div>
                 </div>
-                <div class="about-us__column about-us__column-two">
-                    <div class="about-us__subtitle">Our portfolio</div>
-                    <div class="about-us__text">Most often it is this page, where clients decide to go ahead with us.</div>
-                    <div class="about-us__btn"><a href="https://marffa.com/portfolio/">Learn more</a></div>
                 </div>
+
+                <div class="about-us__column about-us__column-two ">
+                    <div class="dcard">
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="trigger"></div>
+                        <div class="paracard" style="background-image: url(../img/backgroundHover.png);">
+                            <div class="frame">
+                                <div class="about-us__subtitle">Our portfolio</div>
+                                <div class="about-us__text">Most often it is this page, where clients decide to go ahead with us.</div>
+                                <div class="about-us__btn"><a href="https://marffa.com/portfolio/">Learn more</a></div>
+                            </div>
+                        </div>
+                    </div>
                 <div class="about-us__under-block-text"><a href="#section0" >BACK TO FIRST SCREEN</a></div>
             </div>
         </div>
@@ -135,13 +165,13 @@
       @mousemove="handleMouseMove"
       @mouseenter="handleMouseEnter"
       @mouseleave="handleMouseLeave"
-      ref="about-us__column-one">
-      <div class="about-us__column-one"
+      ref="card">
+      <div class="card"
         :style="cardStyle">
         <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
         <div class="card-info">
-         <div class="card-header"></div>
-         <div class="card-content"></div>
+          <slot name="header"></slot>
+          <slot name="content"></slot>
         </div>
       </div>
     </div>`,
@@ -149,7 +179,7 @@
             this.width = this.$refs.card.offsetWidth;
             this.height = this.$refs.card.offsetHeight;
         },
-        props: ['backgroundImage'],
+        props: ['dataImage'],
         data: () => ({
             width: 0,
             height: 0,
@@ -180,7 +210,7 @@
             },
             cardBgImage() {
                 return {
-                    backgroundImage: `url(${this.backgroundImage})`
+                    backgroundImage: `url(${this.dataImage})`
                 }
             }
         },
