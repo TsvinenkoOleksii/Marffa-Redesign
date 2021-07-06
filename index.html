@@ -150,17 +150,16 @@
         :style="cardStyle">
         <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
         <div class="card-info">
-         <div class="about-us__subtitle"></div>
-         <div class="about-us__text"></div>
-         <div class="about-us__btn"></div>
+         <div class="card-header"></div>
+         <div class="card-content"></div>
         </div>
       </div>
     </div>`,
         mounted() {
-            this.width = this.$refs.about-us__column.offsetWidth;
-            this.height = this.$refs.about-us__column.offsetHeight;
+            this.width = this.$refs.card.offsetWidth;
+            this.height = this.$refs.card.offsetHeight;
         },
-        props: ['dataImage'],
+        props: ['backgroundImage'],
         data: () => ({
             width: 0,
             height: 0,
@@ -191,14 +190,14 @@
             },
             cardBgImage() {
                 return {
-                    backgroundImage: `url(${this.dataImage})`
+                    backgroundImage: `url(${this.backgroundImage})`
                 }
             }
         },
         methods: {
             handleMouseMove(e) {
-                this.mouseX = e.pageX - this.$refs.about-us__column.offsetLeft - this.width/2;
-                this.mouseY = e.pageY - this.$refs.about-us__column.offsetTop - this.height/2;
+                this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width/2;
+                this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height/2;
             },
             handleMouseEnter() {
                 clearTimeout(this.mouseLeaveDelay);
