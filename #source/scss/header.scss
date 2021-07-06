@@ -9,6 +9,16 @@
   width: 100%;
   background-color: transparent;
   z-index: 2;
+  //transform: translateY(-100%);
+  animation: show-header 1s 3s cubic-bezier(0.5, 0, 0.1, 1) both;
+  opacity: 0;
+
+  @keyframes show-header {
+    to {
+      //transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 
   &__row {
@@ -16,38 +26,15 @@
     align-items: center;
     justify-content: space-between;
     height: 125px;
-    animation: text-clip 2s 5s cubic-bezier(0.5, 0, 0.1, 1) both;
-    @include breakpoint(largeDesktop) {
-    }
-
-    @include breakpoint(mediumDesktop) {
-    }
-
-    @include breakpoint(smallDesktop) {
-    }
-
-    @include breakpoint(tablet) {
-    }
-
-    @include breakpoint(tabletSmall) {
-    }
 
     @include breakpoint(mobile) {
-      height: 75px  ;
+      height: 75px;
     }
 
-    @include breakpoint(mobileSmall) {
-
-    }
     @include breakpoint(bigMobileWithHeight) {
-    height: 75px;
+      height: 75px;
     }
-    @include breakpoint(mobileWithHeight) {
 
-    }
-    @include breakpoint(smallMobileWithHeight) {
-
-    }
   }
 
   &__logo {
@@ -56,54 +43,29 @@
     align-items: center;
     width: 149px;
     height: 24px;
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){}
-
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){}
 
     @include breakpoint(mobile){
       width: 114px;
     }
-    @include breakpoint(mobileSmall){}
+
   }
+
   &__desktop-logo {
     display: block;
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){}
-
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){}
 
     @include breakpoint(mobile){
      display: none;
     }
-    @include breakpoint(mobileSmall){}
+
   }
+
   &__mobile-logo {
     display: none;
-    @include breakpoint(largeDesktop){}
-
-    @include breakpoint(mediumDesktop){}
-
-    @include breakpoint(smallDesktop){}
-
-    @include breakpoint(tablet){}
-
-    @include breakpoint(tabletSmall){}
 
     @include breakpoint(mobile){
       display: block;
     }
-    @include breakpoint(mobileSmall){}
+
   }
 
   &__button {
@@ -131,6 +93,7 @@
       transition: all 0.3s;
       z-index: 2;
       animation: pulse 2s infinite;
+
       @-webkit-keyframes pulse {
         0% {
           -webkit-box-shadow:  0 0 0 rgba(230, 205, 11, 0.3);
@@ -142,6 +105,7 @@
           -webkit-box-shadow: 0 0 0 rgba(230, 205, 11, 0.0);
         }
       }
+
       @keyframes pulse {
         0% {
           -moz-box-shadow: 0 0 0 rgba(230, 205, 11, 0.3);
@@ -156,6 +120,7 @@
           box-shadow: 0 0 0 rgba(230, 205, 11, 0.3);
         }
       }
+
       &:hover  {
         transition: all 0.3s;
       }
