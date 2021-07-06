@@ -1493,11 +1493,6 @@ body {
     margin: 20px auto 0px auto !important;
   }
 }
-* {
-  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
 .paracard {
   width: 100%;
   display: block;
@@ -1510,6 +1505,8 @@ body {
   background-size: 110% 110%;
   background-position: center center;
   border-radius: 10px;
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .dcard {
@@ -1518,6 +1515,8 @@ body {
   -webkit-perspective: 500px;
           perspective: 500px;
   border-radius: 12px;
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .frame {
@@ -1530,13 +1529,19 @@ body {
   left: 0;
   border-radius: 10px;
   z-index: 0;
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .dcard:hover .paracard .frame {
   background: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .dcard:hover .paracard .frame:after {
   border: 2px solid rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .trigger {
@@ -1545,6 +1550,8 @@ body {
   width: 33.333333%;
   display: block;
   z-index: 2;
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .trigger:nth-child(1) {
   left: 0%;
