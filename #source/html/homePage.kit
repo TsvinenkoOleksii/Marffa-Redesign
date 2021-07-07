@@ -137,34 +137,14 @@
         showActiveTooltip: true ,
         slidesNavigation: true,
         scrollingSpeed: 1400,
+        normalScrollElements: '.atf, .contact-us, .about-us',
+        scrollBar: true,
         slidesNavPosition: 'bottom',
-        fitToSection: true,
-        fitToSectionDelay: 1000,
+        continuousVertical: true,
     });
 
 
-    const anchors = document.querySelectorAll('a[href*="#"]')
 
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault()
-
-            const blockID = anchor.getAttribute('href').substr(1)
-
-            document.getElementById(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            })
-        })
-    }
-
-    $(document).ready(function() {
-        $('.parallax-window').parallax({
-            naturalWidth: 600,
-            naturalHeight: 400,
-
-        });
-    });
 
 </script>
 
