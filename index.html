@@ -25,9 +25,7 @@
     </div>
 </div>
 <div id="fullpage">
-
-    <div class="section active atf" id="section0">
-
+    <div class="section active atf" id="section0" data-anchor="firstScreen">
         <div class="container">
             <div class="atf__img-parallax" data-parallax="scroll" data-image-src="./img/backgroundFirst.png"></div>
             <div class="atf__column-one">
@@ -46,15 +44,15 @@
                     <div class="atf__title_row ">grow stunning websites</div>
                     <div class="atf__title_row ">and web apps that</div>
                     <div class="atf__title_row "><span>skyrocket</span> your <span>sales</span></div>
-
                 </div>
-
             </div>
-            <div class="atf__subtitle"> <a href="#section1">Scroll to see more</a></div>
+            <div class="atf__subtitle">
+                <a href="#secondScreen">Scroll to see more</a>
+            </div>
         </div>
     </div>
 
-    <div class="section contact-us" id="section1">
+    <div class="section contact-us" id="section1" data-anchor="secondScreen">
         <div class="container">
             <div class="contact-us__row">
                 <div class="contact-us__column-one">
@@ -64,34 +62,33 @@
                 <div class="contact-us__column-two">
                     <a href="mailto:dmytro@marffa.com ">dmytro@marffa.com</a> <a href="tel:+358 41 742 9684">+358 41 742 9684</a>
                 </div>
-                <div class="contact-us__under-block-text"><a href="#section2" >Scroll to see more</a></div>
+                <div class="contact-us__under-block-text"><a href="#thirdScreen" >Scroll to see more</a></div>
 
             </div>
         </div>
         <div class="contact-us__animation-img-one"><embed src="./img/Contact us stroke.svg"></div>
-
         <div class="contact-us__animation-img-two"><embed src="./img/Contact us stroke.svg"></div>
     </div>
 
-    <div class="section about-us" id="section2">
+    <div class="section about-us" id="section2" data-anchor="thirdScreen">
         <div class="container">
             <div class="about-us__row">
                 <div class="about-us__title">Meanwhile, <span>check this</span>: </div>
             </div>
             <div class="about-us__row-two">
                 <div class="about-us__column about-us__column-one">
-                    <div class="dcard">
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="paracard" style="background-image: url('./img/meetOurTeam.jpg');">
-                            <div class="frame">
+                    <div class="about-us__card">
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__paracard" style="background-image: url('./img/meetOurTeam.jpg');">
+                            <div class="about-us__frame">
                                 <div class="about-us__subtitle">Meet our team</div>
                                 <div class="about-us__text">People who make these things possible daily.</div>
                                 <div class="about-us__btn"><a href="https://marffa.com/people/">Learn more</a></div>
@@ -101,25 +98,25 @@
                 </div>
 
                 <div class="about-us__column about-us__column-two ">
-                    <div class="dcard">
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="trigger"></div>
-                        <div class="paracard" style="background-image: url('./img/backgroundHover.png');">
-                            <div class="frame">
+                    <div class="about-us__card">
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__trigger"></div>
+                        <div class="about-us__paracard" style="background-image: url('./img/backgroundHover.png');">
+                            <div class="about-us__frame">
                                 <div class="about-us__subtitle">Our portfolio</div>
                                 <div class="about-us__text">Most often it is this page, where clients decide to go ahead with us.</div>
                                 <div class="about-us__btn"><a href="https://marffa.com/portfolio/">Learn more</a></div>
                             </div>
                         </div>
                     </div>
-                <div class="about-us__under-block-text"><a href="#section0" >BACK TO FIRST SCREEN</a></div>
+                <div class="about-us__under-block-text"><a href="#firstScreen" >BACK TO FIRST SCREEN</a></div>
             </div>
         </div>
     </div>
@@ -148,9 +145,6 @@
         slidesNavigation: true,
         scrollingSpeed: 1400,
         normalScrollElements: '.atf, .contact-us, .about-us',
-        scrollBar: true,
-        slidesNavPosition: 'bottom',
-        continuousVertical: true,
     });
 
 
